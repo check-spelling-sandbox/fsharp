@@ -1,0 +1,217 @@
+# See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-patterns
+
+# Automatically suggested patterns
+# hit-count: 21459 file-count: 1170
+# IServiceProvider / isAThing
+\b(?:I|isA)(?=(?:[A-Z][a-z]{2,})+\b)
+
+# hit-count: 18790 file-count: 994
+# uuid:
+\b[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}\b
+
+# hit-count: 4616 file-count: 2141
+# https/http/file urls
+(?:\b(?:https?|ftp|file)://)[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]
+
+# hit-count: 61 file-count: 11
+# alternate markers if you run into latex and friends
+(?<!\\)\\[nrt](?=[a-z]{2,})(?=.*%s.*['"`])
+
+# more aggressive
+\\n(?!ative|ested|et|eutral|ewcmd|onexistent|oframework|uget)(?=[a-z]{2,})
+
+# hit-count: 1351 file-count: 114
+# hex runs
+\b[0-9a-fA-F]{16,}\b
+
+# hit-count: 972 file-count: 4
+# latex (check-spelling >= 0.0.22)
+\\\w{2,}\{
+
+# hit-count: 877 file-count: 115
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#x?|\%23|&(?:amp;|)H)[0-9_a-fA-FgGrR]*?[a-fA-FgGrR]{2,}[0-9_a-fA-FgGrR]*(?:[uUIlL]{0,3}|[iu]\d+)\b
+
+# hit-count: 171 file-count: 2
+# Contributor
+\[[^\]]+\]\(https://github\.com/[^/\s"]+/?\)
+
+# hit-count: 121 file-count: 39
+# Compiler flags (Unix, Java/Scala)
+# Use if you have things like `-Pdocker` and want to treat them as `docker`
+\} -l|"-l(?![io])
+(?:^|[\t ,>"'`=(])-(?:D(?!E)|f)(?=[A-Z]{2,})
+
+# hit-count: 96 file-count: 42
+# microsoft
+\b(?:https?://|)(?:(?:download\.visualstudio|docs|msdn2?|research)\.microsoft|blogs\.msdn)\.com/[-_a-zA-Z0-9()=./%]*
+
+# hit-count: 86 file-count: 15
+# URL escaped characters
+\%[0-9A-F][A-F](?=[A-Za-z])
+
+# hit-count: 45 file-count: 3
+# Non-English
+[a-zA-Z]*[ÀÁÂÃÄÅÆČÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæčçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź][a-zA-Z]{3}[a-zA-ZÀÁÂÃÄÅÆČÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæčçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź]*|[a-zA-Z]{3,}[ÀÁÂÃÄÅÆČÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæčçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź]|[ÀÁÂÃÄÅÆČÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæčçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź][a-zA-Z]{3,}
+
+# hit-count: 34 file-count: 2
+# perl regex test
+[!=]~ (?:/.*/|m\{.*?\}|m<.*?>|m([|!/@#,;']).*?\g{-1})
+
+# hit-count: 17 file-count: 11
+# This does not cover multiline strings, if your repository has them,
+# you'll want to remove the `(?=.*?")` suffix.
+# The `(?=.*?")` suffix should limit the false positives rate
+# printf
+%(?:d(?!epend|ot)|s(?!dk|ource))(?=[a-z]{2,})(?=[_a-zA-Z]+\b)(?!%)(?=.*?['"])
+
+# hit-count: 10 file-count: 1
+# tput arguments -- https://man7.org/linux/man-pages/man5/terminfo.5.html -- technically they can be more than 5 chars long...
+\btput\s+(?:(?:-[SV]|-T\s*\w+)\s+)*\w{3,5}\b
+
+# hit-count: 5 file-count: 4
+# data url in parens
+\(data:(?:[^) ][^)]*?|)(?:[A-Z]{3,}|[A-Z][a-z]{2,}|[a-z]{3,})[^)]*\)
+
+# hit-count: 4 file-count: 1
+# file permissions
+['"`\s][-bcdLlpsw](?:[-r][-w][-Ssx]){2}[-r][-w][-SsTtx]\+?['"`\s]
+
+# hit-count: 3 file-count: 3
+# cdn.cloudflare.com
+\bcdnjs\.cloudflare\.com/[./\w]+
+
+# hit-count: 3 file-count: 2
+# tar arguments
+\b(?:\\n|)g?tar(?:\.exe|)(?:(?:\s+--[-a-zA-Z]+|\s+-[a-zA-Z]+|\s[ABGJMOPRSUWZacdfh-pr-xz]+\b)(?:=[^ ]*|))+
+
+# hit-count: 2 file-count: 1
+# lower URL escaped characters
+\%(?!fail)[0-9a-f][a-f](?=[a-z]{2,})
+
+# hit-count: 2 file-count: 1
+# apache
+a2(?:en|dis)
+
+# hit-count: 1 file-count: 1
+# assign regex
+= /[^*]*?(?:[a-z]{3,}|[A-Z]{3,}|[A-Z][a-z]{2,}).*/
+
+# hit-count: 1 file-count: 1
+# perl run
+perl(?:\s+-[a-zA-Z]\w*)+
+
+# hit-count: 1 file-count: 1
+# regex choice
+\(\?:[^)]+\|[^)]+\)
+
+# hit-count: 1 file-count: 1
+# Update Lorem based on your content (requires `ge` and `w` from https://github.com/jsoref/spelling; and `review` from https://github.com/check-spelling/check-spelling/wiki/Looking-for-items-locally )
+# grep '^[^#].*lorem' .github/actions/spelling/patterns.txt|perl -pne 's/.*i..\?://;s/\).*//' |tr '|' "\n"|sort -f |xargs -n1 ge|perl -pne 's/^[^:]*://'|sort -u|w|sed -e 's/ .*//'|w|review -
+# Warning, while `(?i)` is very neat and fancy, if you have some binary files that aren't proper unicode, you might run into:
+## Operation "substitution (s///)" returns its argument for non-Unicode code point 0x1C19AE (the code point will vary).
+## You could manually change `(?i)X...` to use `[Xx]...`
+## or you could add the files to your `excludes` file (a version after 0.0.19 should identify the file path)
+# Lorem
+(?:\w|\s|[,.])*\b(?i)(?:amet|consectetur|cursus|dolor|eros|ipsum|lacus|libero|ligula|lorem|magna|neque|nulla|suscipit|tempus)\b(?:\w|\s|[,.])*
+
+# base64 encoded content
+^\s{6,}[-a-zA-Z=;:/0-9+]{15,80}$
+
+\\n(?=[a-z]{2,}(?: =.*"|\\r.*"| [^"\\]*"))
+(?:\\[nrt]){2,}
+\\n(?=.*(?:\{\d+\}|\(\)))
+\\n(?=(?!et)[a-z]+")
+
+_[0-9a-f]{8,}
+
+# Guid
+Guid\(&H[0-9A-F]+UI,(?: &H[0-9A-F]+US,){2}
+
+# German
+.*\b(?:Durch|Komponenten|zugreifen)\b.*
+
+tree\d[A-Z](?=[a-z]{2,})
+
+<id>[A-Z]{5}</id>
+
+\bcheck(?:CommuteSeq|\d*) "(?:(?:Generic|)StaticTest\d+\.|opt\.|)[a-z0-9]+"
+\bcheck(?:OneAttribute \(|OnThread|On )"[a-z]+
+\bcheck(Equals|Eval|Quiet) "!?\w+"
+\bcheckLinqQueryText "[A-Za"-z0-9]+
+^\s*test "test\d+: [a-z0-9]+"
+\btest "[a-zA-Z0-9]+"
+\breport_failure "[a-z0-9]+"
+\bRun(?:ExactlyOnce|Never)Point\("[a-z]+
+0x[0-9A-F]+[Lln][Ff]?
+^(?:\s*printfn|.*printString) "(?=e)[a-z]{5,6}(?:\d+: |)"$
+
+2D[A-Z][a-z]+
+\b[A-Z]?[a-z]+&amp;[a-z]+\b
+
+\[[A-Z][a-z]\][a-z]{2,}
+\b[a-z]{1,4}\[[a-z]{2,}\]
+
+(?:\b|[A-Z])[a-z]+\$+[a-z]+\b
+
+(?<=[a-zA-Z])x86
+
+\bQ(?=(?:[a-tv-z]|u[^aeiou])[a-z]+)
+
+--no(?=(?!de|n|tif)[a-z]{2,}(?![A-Z]))
+/no(?=(?![dt]e|n|tif)[a-z]{2,}(?![A-Z>]))
+
+# Tests.LanguageService.Completion.fs
+let f\(\)  = seq.*\]
+
+# file path
+"MacOS"
+
+layout = \{.*\}
+
+ProductName = "[^"]+"
+
+NaN(?=[A-Za-z])
+
+# Misspelled FS Comp / Core identifiers
+\b(?:CallerMemberNameIsOverriden|EnumNestedHierachiesForBuildDependency|lexfltIncorrentIndentationOfIn|lexOusideDecimal|lexOusideThirtyTwoBitFloat|OnAfterAsynchOpenProject|OverridenMethod|patcMissingVariable|patcPartialActivePatternsGenerateOneResult|PSFF_CreateIfNotExist)\b
+
+\bLetterS\)ystem
+
+# type
+AssertQuickInfoContainsAtEndOfMarker \(\w+, "\w+"|\bmarker = "[a-z]{3,}
+
+\w+&amp;\w+
+IdentifiersShouldBeSpelledCorrectly.*
+
+# Questionably acceptable forms of `in to`
+# Personally, I prefer `log into`, but people object
+# https://www.tprteaching.com/log-into-log-in-to-login/
+\b(?:[Ll]og|[Ss]ign) in to\b
+
+# to opt in
+\bto opt in\b
+
+# acceptable duplicates
+\bif compare (\w+) \g{-1}\b
+# ls directory listings
+[-bcdlpsw](?:[-r][-w][-SsTtx]){3}[\.+*]?\s+\d+\s+\S+\s+\S+\s+\d+\s+
+# mount
+\bmount\s+-t\s+(\w+)\s+\g{-1}\b
+# C types and repeated CSS values
+\s(array|auto|byref|capture|Ch?ar|center|COMMA|Control|digit|div|dot|emptyseq|[Ff]alse|fenv|hex|ignore|inherit|interface|iset|let|list|long|LONG|max|mixin|[Nn]ame|[Nn]one|normal|NOTE|null|Nullary|nullseq|nusual|option|pos|printany|range|RARROW|scopem|seps|solid|testname|that|thin|transparent|[Tt]rue|type|very|voption|xxs)(?: \g{-1})+\s
+# C struct
+\bstruct\s+(\w+)\s+\g{-1}\b
+# go templates
+\s(\w+)\s+\g{-1}\s+\`(?:graphql|inject|json|yaml):
+# doxygen / javadoc / .net
+(?:[\\@](?:brief|groupname|t?param|return|retval)|(?:public|private|\[Parameter(?:\(.+\)|)\])(?:\s+static|\s+override|\s+readonly)*)(?:\s+\{\w+\}|)\s+(\w+)\s+\g{-1}\s
+
+# Commit message -- Signed-off-by and friends
+^\s*(?:(?:Based-on-patch|Co-authored|Helped|Mentored|Reported|Reviewed|Signed-off)-by|Thanks-to): (?:[^<]*<[^>]*>|[^<]*)\s*$
+
+# Autogenerated revert commit message
+^This reverts commit [0-9a-f]{40}\.$
+
+# ignore long runs of a single character:
+\b([A-Za-z])\g{-1}{3,}\b
