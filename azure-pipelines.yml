@@ -550,8 +550,8 @@ stages:
             continueOnError: true
             condition: failed()
 
-        # MacOS
-        - job: MacOS
+        # macOS
+        - job: macOS
           pool:
             vmImage: macos-11
           variables:
@@ -576,7 +576,7 @@ stages:
             displayName: Publish Test Logs
             inputs:
               PathtoPublish: '$(Build.SourcesDirectory)/artifacts/TestResults/$(_BuildConfig)'
-              ArtifactName: 'MacOS $(_BuildConfig) test logs'
+              ArtifactName: 'macOS $(_BuildConfig) test logs'
               publishLocation: Container
             continueOnError: true
             condition: failed()
@@ -686,7 +686,7 @@ stages:
             condition: always()
 
         # Plain FCS build Mac
-        - job: Plain_Build_MacOS
+        - job: Plain_Build_macOS
           pool:
             vmImage: macos-11
           variables:
