@@ -502,7 +502,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             : base(root)
         {
             Debug.Assert(root != null && !String.IsNullOrEmpty(referencedProjectName) && !String.IsNullOrEmpty(projectReference)
-                && !String.IsNullOrEmpty(projectPath), "Can not add a reference because the input for adding one is invalid.");
+                && !String.IsNullOrEmpty(projectPath), "Cannot add a reference because the input for adding one is invalid.");
             this.referencedProjectName = referencedProjectName;
 
             int indexOfSeparator = projectReference.IndexOf('|');
@@ -531,7 +531,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                 }
             }
 
-            Debug.Assert(!String.IsNullOrEmpty(fileName), "Can not add a project reference because the input for adding one is invalid.");
+            Debug.Assert(!String.IsNullOrEmpty(fileName), "Cannot add a project reference because the input for adding one is invalid.");
 
             if (!System.IO.Path.IsPathRooted(projectPath))
             {
@@ -544,7 +544,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
 
             string referenceDir = Path.GetDirectoryName(PackageUtilities.GetPathDistance(this.ProjectMgr.BaseURI.Uri, uri));
 
-            Debug.Assert(!String.IsNullOrEmpty(referenceDir), "Can not add a project reference because the input for adding one is invalid.");
+            Debug.Assert(!String.IsNullOrEmpty(referenceDir), "Cannot add a project reference because the input for adding one is invalid.");
 
             string justTheFileName = Path.GetFileName(fileName);
             this.referencedProjectRelativePath = Path.Combine(referenceDir, justTheFileName);

@@ -624,7 +624,7 @@ module StaticMemberScopeTest =
     type StaticTestA1(argA,argB) = 
       let         locval = 1 + argA
       let mutable locmut = 2 + argB
-      static member M = 12 (* can not use: locval + locmut + argA  *)
+      static member M = 12 (* cannot use: locval + locmut + argA  *)
     
 
 
