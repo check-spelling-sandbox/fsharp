@@ -217,8 +217,8 @@ type Summary<'Info> =
       TotalSize: int 
       
       /// Meaning: could mutate, could non-terminate, could raise exception 
-      /// One use: an effect expr can not be eliminated as dead code (e.g. sequencing)
-      /// One use: an effect=false expr can not throw an exception? so try-with is removed.
+      /// One use: an effect expr cannot be eliminated as dead code (e.g. sequencing)
+      /// One use: an effect=false expr cannot throw an exception? so try-with is removed.
       HasEffect: bool  
       
       /// Indicates that a function may make a useful tailcall, hence when called should itself be tailcalled

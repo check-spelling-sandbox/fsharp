@@ -123,7 +123,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             }
             else
             {
-                // There is no target node. The drop can not be completed.
+                // There is no target node. The drop cannot be completed.
                 return VSConstants.S_FALSE;
             }
 

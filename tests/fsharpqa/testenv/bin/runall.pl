@@ -511,7 +511,7 @@ sub get_lang
 
     # put language in the form that VCTR expects, either
     # English, Japanese, German, or Arabic
-    # Can not just return the string from getoslang.exe, b/c
+    # Cannot just return the string from getoslang.exe, b/c
     # getoslang.exe will return things like English (United States)
     foreach my $l ($host_lang, $target_lang)
     {
@@ -2114,7 +2114,7 @@ sub parse_switches
             } else {
                 $debug = $sw;
                 if ( $filelock > 0 ) {
-                    leave("Runall.pl line " . __LINE__ . ":  Bad -debug switch value: '$sw'\n\t (-filelock switch is not 0 so -debug:$sw can not be used\n", $SWITCH_ERROR_EXITVAL);
+                    leave("Runall.pl line " . __LINE__ . ":  Bad -debug switch value: '$sw'\n\t (-filelock switch is not 0 so -debug:$sw cannot be used\n", $SWITCH_ERROR_EXITVAL);
                 } else {
                     $filelock = 0;
                 }
