@@ -6,7 +6,7 @@ open FSharp.Test.Compiler
 module ObsoleteAttributeCheckingTests =
     
     [<Fact>]
-    let ``Obsolete attribute is not taken into account when used on on a member and and instantiate the type`` () =
+    let ``Obsolete attribute is not taken into account when used on on a member and instantiate the type`` () =
         Fsx """
 open System
 
