@@ -5320,7 +5320,7 @@ let x = query { for bbbb in abbbbc(*D0*) do
     [<Test>]
     [<Category("Unit of Measure")>]
     // Verify that we display the correct list of Unit of Measure (Names) in the autocomplete window. 
-    // This also ensures that no UoM are accidenatally added or removed.
+    // This also ensures that no UoM are accidentally added or removed.
     member public this.``UnitMeasure.UnitNames``() =
         AssertAutoCompleteContains
           [ "Microsoft.FSharp.Data.UnitSystems.SI.UnitNames."]
@@ -5333,7 +5333,7 @@ let x = query { for bbbb in abbbbc(*D0*) do
     [<Test>]
     [<Category("Unit of Measure")>]
     // Verify that we display the correct list of Unit of Measure (Symbols) in the autocomplete window. 
-    // This also ensures that no UoM are accidenatally added or removed.
+    // This also ensures that no UoM are accidentally added or removed.
     member public this.``UnitMeasure.UnitSymbols``() =
         AssertAutoCompleteContains
           [ "Microsoft.FSharp.Data.UnitSystems.SI.UnitSymbols."]
