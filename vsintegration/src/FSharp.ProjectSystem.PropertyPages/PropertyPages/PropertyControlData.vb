@@ -2304,10 +2304,10 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         ''' Retrieves the name of the given special file, and creates it if requested
         ''' </summary>
         ''' <param name="PSFFILEID"></param>
-        ''' <param name="CreateIfNotExist"></param>
+        ''' <param name="CreateIfNonexistent"></param>
         ''' <returns></returns>
         ''' <remarks></remarks>
-        Private Function GetSpecialFile(ByVal psfFileId As Integer, ByVal CreateIfNotExist As Boolean) As String
+        Private Function GetSpecialFile(ByVal psfFileId As Integer, ByVal CreateIfNonexistent As Boolean) As String
             If m_PropPage Is Nothing OrElse m_PropPage.ProjectHierarchy Is Nothing Then
                 Debug.Fail("Unexpected null")
                 Return Nothing
@@ -2322,7 +2322,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
             Dim itemId As UInteger
             Dim hr As Integer
             Dim flags As UInteger = CUInt(__PSFFLAGS.PSFF_FullPath)
-            If CreateIfNotExist Then
+            If CreateIfNonexistent Then
                 flags = flags Or CUInt(__PSFFLAGS.PSFF_CreateIfNotExist)
             End If
 

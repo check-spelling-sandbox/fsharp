@@ -3290,9 +3290,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to The external program cannot be found. Please enter a valid executable file..
         '''</summary>
-        Friend Shared ReadOnly Property PropPage_ProgramNotExist() As String
+        Friend Shared ReadOnly Property PropPage_ProgramNonexistent() As String
             Get
-                Return ResourceManager.GetString("PropPage_ProgramNotExist", resourceCulture)
+                Return ResourceManager.GetString("PropPage_ProgramNonexistent", resourceCulture)
             End Get
         End Property
         
@@ -3317,9 +3317,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to &quot;The resource file entered does not exist.&quot;.
         '''</summary>
-        Friend Shared ReadOnly Property PropPage_ResourceFileNotExist() As String
+        Friend Shared ReadOnly Property PropPage_ResourceFileNonexistent() As String
             Get
-                Return ResourceManager.GetString("PropPage_ResourceFileNotExist", resourceCulture)
+                Return ResourceManager.GetString("PropPage_ResourceFileNonexistent", resourceCulture)
             End Get
         End Property
         
