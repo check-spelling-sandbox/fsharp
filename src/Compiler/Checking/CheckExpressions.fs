@@ -8131,7 +8131,7 @@ and TcNameOfExpr (cenv: cenv) env tpenv (synArg: SynExpr) =
             if resolvedToModuleOrNamespaceName then result else
 
             ForceRaise nameResolutionResult |> ignore
-            // If that didn't give aan exception then raise a generic error
+            // If that didn't give an exception then raise a generic error
             error (Error(FSComp.SR.expressionHasNoName(), m))
 
         // expr<tyargs> allowed, even with qualifications
