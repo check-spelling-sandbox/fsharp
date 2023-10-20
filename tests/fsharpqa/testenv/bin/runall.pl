@@ -4723,7 +4723,7 @@ sub RunMultiProcess() {
 	};
     };
 
-    # regurgitate the the dependence list for debugging purposes
+    # regurgitate the dependence list for debugging purposes
     mp_log( "##################################################\n", 4);
     mp_log( "#####   DEPENDENTS ###############################\n", 4);
     mp_log( "##################################################\n", 4);

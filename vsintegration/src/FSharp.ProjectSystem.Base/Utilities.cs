@@ -302,7 +302,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         /// It is the responsibility of the caller to release this memory.
         /// </summary>
         /// <param name="strings"></param>
-        /// <returns>A CALPOLESTR that was created from the the list of strings.</returns>
+        /// <returns>A CALPOLESTR that was created from the list of strings.</returns>
         [SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "CALPOLESTR")]
         public static CALPOLESTR CreateCALPOLESTR(IList<string> strings)
         {
@@ -696,7 +696,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         /// Sets a string value from an enum
         /// </summary>
         /// <typeparam name="T">The enum type</typeparam>
-        /// <param name="enumValue">The value of teh enum.</param>
+        /// <param name="enumValue">The value of the enum.</param>
         /// <returns></returns>
         public static string SetStringValueFromConvertedEnum<T>(T enumValue, CultureInfo culture)
             where T : struct

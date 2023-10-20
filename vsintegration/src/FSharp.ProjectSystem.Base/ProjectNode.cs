@@ -3916,7 +3916,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                     continue;
 
                 // If the item is already contained do nothing.
-                // TODO: possibly report in the error list that the the item is already contained in the project file similar to Language projects.
+                // TODO: possibly report in the error list that the item is already contained in the project file similar to Language projects.
                 if (items.ContainsKey(MSBuildItem.GetEvaluatedInclude(item).ToUpperInvariant()))
                     continue;
 
@@ -3971,7 +3971,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
 
             // If (eventArgs.Hierarchy == NULL) then we received this event because the solution configuration
             // was changed.
-            // If it is not null we got the event because a project in teh configuration manager has changed its active configuration.
+            // If it is not null we got the event because a project in the configuration manager has changed its active configuration.
             // We care only about our project in the default implementation.
             if (eventArgs.Hierarchy == null || !Utilities.IsSameComObject(eventArgs.Hierarchy, this))
             {
