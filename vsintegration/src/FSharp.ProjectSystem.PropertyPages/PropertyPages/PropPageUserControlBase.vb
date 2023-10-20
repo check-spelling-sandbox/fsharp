@@ -2059,7 +2059,7 @@ NextControl:
                                 ProjectReloadWasValid = True
                             End If
 
-                            'Check if there any any other pending property changes on this page (this shouldn't
+                            'Check if there are any other pending property changes on this page (this shouldn't
                             '  happen if the advice in VerifyPropertiesWhichMayReloadProjectAreLast is
                             '  followed, unless there's more than one property on a page which can cause a 
                             '  project reload).
