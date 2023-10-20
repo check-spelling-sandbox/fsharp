@@ -2743,7 +2743,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                 IVsMultiItemSelect multiItemSelect = null;
                 ErrorHandler.ThrowOnFailure(monitorSelection.GetCurrentSelection(out hierarchyPtr, out itemid, out multiItemSelect, out selectionContainer));
 
-                // We only care if there are one ore more nodes selected in the tree
+                // We only care if there are one or more nodes selected in the tree
                 if (itemid != VSConstants.VSITEMID_NIL && hierarchyPtr != IntPtr.Zero)
                 {
                     IVsHierarchy hierarchy = Marshal.GetObjectForIUnknown(hierarchyPtr) as IVsHierarchy;
