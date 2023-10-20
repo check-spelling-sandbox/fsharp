@@ -1333,7 +1333,7 @@ namespace rec Microsoft.VisualStudio.FSharp.ProjectSystem
                 let projProp = new FSharpProjectNodeProperties(x)
                 let dwFlags = 
                     if projProp.OutputType = OutputType.WinExe || projProp.OutputType = OutputType.Exe then
-                        __PSFFLAGS.PSFF_FullPath ||| __PSFFLAGS.PSFF_CreateIfNotExist
+                        __PSFFLAGS.PSFF_FullPath ||| __PSFFLAGS.PSFF_CreateIfNonexistent
                     else
                         __PSFFLAGS.PSFF_FullPath
 

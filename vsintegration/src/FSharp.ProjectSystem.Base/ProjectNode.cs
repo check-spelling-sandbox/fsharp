@@ -5784,7 +5784,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
 
                 // ok, we couldn't find one - did they want us to create one?
 
-                if ((flags & (uint)__PSFFLAGS.PSFF_CreateIfNotExist) > 0)
+                if ((flags & (uint)__PSFFLAGS.PSFF_CreateIfNonexistent) > 0)
                 {
                     string defaultValue = "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<configuration>\r\n</configuration>";
                     string pathToAppConfig = Path.Combine(this.ProjectFolder, "App.config");

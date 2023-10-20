@@ -575,7 +575,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                         'DO NOT Validate file existence if we are remote debugging, as they are local to the remote machine
                         If Not RemoteDebugEnabled.Checked Then
                             If Not File.Exists(StartProgram.Text) Then
-                                message = SR.GetString(SR.PropPage_ProgramNotExist)
+                                message = SR.GetString(SR.PropPage_ProgramNonexistent)
                                 Return ValidationResult.Warning
                             End If
                         End If

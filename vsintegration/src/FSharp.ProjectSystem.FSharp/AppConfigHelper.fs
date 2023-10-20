@@ -124,7 +124,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                     hr <- VSConstants.E_NOINTERFACE
                 else
                     rdtFlags <- _VSRDTFLAGS.RDT_ReadLock ||| _VSRDTFLAGS.RDT_EditLock
-                    let psfFlags = if forceCreate then __PSFFLAGS.PSFF_FullPath ||| __PSFFLAGS.PSFF_CreateIfNotExist
+                    let psfFlags = if forceCreate then __PSFFLAGS.PSFF_FullPath ||| __PSFFLAGS.PSFF_CreateIfNonexistent
                                    else __PSFFLAGS.PSFF_FullPath
 
                     let (hrres, itemid, filename) = specialFiles.GetFile(int (__PSFFILEID.PSFFILEID_AppConfig), uint32 psfFlags)
