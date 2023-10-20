@@ -184,7 +184,7 @@ module NavigationImpl =
                     | SynMemberKind.Member ->
                         let glyph =
                             if flags.IsOverrideOrExplicitImpl then
-                                FSharpGlyph.OverridenMethod
+                                FSharpGlyph.OverriddenMethod
                             else
                                 FSharpGlyph.Method
 
@@ -338,7 +338,7 @@ module NavigationImpl =
                          ]
                      | SynMemberDefn.AbstractSlot(slotSig = SynValSig (ident = SynIdent (id, _); synType = ty; accessibility = access)) ->
                          [
-                             createMember (id, NavigationItemKind.Method, FSharpGlyph.OverridenMethod, ty.Range, enclosingEntityKind, true, access)
+                             createMember (id, NavigationItemKind.Method, FSharpGlyph.OverriddenMethod, ty.Range, enclosingEntityKind, true, access)
                          ]
                      | SynMemberDefn.NestedType _ -> failwith "tycon as member????" //processTycon tycon
                      | SynMemberDefn.Interface(members = Some (membs)) -> processMembers membs enclosingEntityKind |> snd

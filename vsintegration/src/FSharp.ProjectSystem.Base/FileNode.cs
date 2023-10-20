@@ -886,7 +886,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// This should be overriden for node that are not saved on disk
+        /// This should be overridden for node that are not saved on disk
         /// </summary>
         /// <param name="oldName">Previous name in storage</param>
         /// <param name="newName">New name in storage</param>

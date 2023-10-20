@@ -209,7 +209,7 @@ type internal FSharpDeclarations_DEPRECATED(documentationBuilder, declarations: 
             | FSharpGlyph.Interface -> Some ObsoleteGlyph.Interface
             | FSharpGlyph.ExtensionMethod
             | FSharpGlyph.Method
-            | FSharpGlyph.OverridenMethod -> Some ObsoleteGlyph.Method
+            | FSharpGlyph.OverriddenMethod -> Some ObsoleteGlyph.Method
             | FSharpGlyph.Module -> Some ObsoleteGlyph.Module
             | FSharpGlyph.NameSpace -> Some ObsoleteGlyph.Namespace
             | FSharpGlyph.Property -> Some ObsoleteGlyph.Property

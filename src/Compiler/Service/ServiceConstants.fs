@@ -14,7 +14,7 @@ type FSharpGlyph =
     | Field
     | Interface
     | Method
-    | OverridenMethod
+    | OverriddenMethod
     | Module
     | NameSpace
     | Property

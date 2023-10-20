@@ -2413,7 +2413,7 @@ sub parse_switches
 # get_switches -- build up user preferences
 #
 # The environment variable RUNALL is checked first, so that the values
-# it holds can be overriden on the command line.
+# it holds can be overridden on the command line.
 #
 sub get_switches
 {

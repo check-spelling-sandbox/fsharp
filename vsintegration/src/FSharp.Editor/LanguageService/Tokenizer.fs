@@ -113,7 +113,7 @@ module internal Tokenizer =
             | Protected -> Glyph.InterfaceProtected
             | Private -> Glyph.InterfacePrivate
         | FSharpGlyph.Method
-        | FSharpGlyph.OverridenMethod ->
+        | FSharpGlyph.OverriddenMethod ->
             match accessibility with
             | Public -> Glyph.MethodPublic
             | Internal -> Glyph.MethodInternal
