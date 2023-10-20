@@ -1225,7 +1225,7 @@ for i in 0..a."]
         AssertCtrlSpaceCompleteContains code "for" ["form"] []  // 'for' is a keyword, but should not prevent completion
     
     [<Test>]
-    member public this.``ObjInstance.InheritedClass.MethodsWithDiffAccessbility``() =
+    member public this.``ObjInstance.InheritedClass.MethodsWithDiffAccessibility``() =
         AssertAutoCompleteContainsNoCoffeeBreak 
           [ "type Base =
    val mutable baseField : int
@@ -1245,7 +1245,7 @@ derived.derivedField"]
           [ "baseFieldPrivate"; "derivedFieldPrivate" ] // should not contain
 
     [<Test>]
-    member public this.``ObjInstance.InheritedClass.MethodsWithDiffAccessbilityWithSameNameMethod``() =
+    member public this.``ObjInstance.InheritedClass.MethodsWithDiffAccessibilityWithSameNameMethod``() =
         AssertAutoCompleteContainsNoCoffeeBreak 
           [ "type Base =
    val mutable baseField : int
