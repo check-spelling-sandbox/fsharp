@@ -80,7 +80,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                     '  so we delay the main Dispose() until after the apply is finished.
                     'We do go ahead and get rid of COM references and do general clean-up, though.  This includes removing our 
                     '  listening to events from the environment, etc.
-                    'We do *not* call in to the base's Dispose(), because that will get rid of the controls, and that's what we're
+                    'We do *not* call into the base's Dispose(), because that will get rid of the controls, and that's what we're
                     '  trying to avoid right now.
 
                     Trace.WriteLine("***** PropPageUserControlBase.Dispose(): Being forcibly deactivated during an checkout.  Disposal of controls will be delayed until after the current callstack is finished.")
@@ -180,7 +180,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         'Backs the CanApplyNow property
         Private m_CanApplyNow As Boolean = True
 
-        'The site passed in to SetPageSite.  May be Nothing if not currently sited.
+        'The site passed into SetPageSite.  May be Nothing if not currently sited.
         Private m_Site As IPropertyPageSiteInternal
 
         'May be used by derived property pages to cache their PropertyControlData in their ControlData property override.
@@ -980,7 +980,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         ''' </summary>
         ''' <param name="HelpDir">Not used.</param>
         ''' <remarks></remarks>
-        Private Sub IProperyPageInternal_Help(ByVal HelpDir As String) Implements IPropertyPageInternal.Help
+        Private Sub IPropertyPageInternal_Help(ByVal HelpDir As String) Implements IPropertyPageInternal.Help
             DesignerFramework.DesignUtil.DisplayTopicFromF1Keyword(ServiceProvider, GetF1HelpKeyword)
         End Sub
 
