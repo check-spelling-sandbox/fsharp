@@ -473,7 +473,7 @@ This release covers three important milestones: F# 5, Visual Studio 16.8, and .N
 ### FSharp Core 5.0.0
 
 
-* Consistent behavior for empty/non-existent slices for lists, strings, arrays, 2D arrays, 3D arrays, and 4D arrays
+* Consistent behavior for empty/nonexistent slices for lists, strings, arrays, 2D arrays, 3D arrays, and 4D arrays
 * Support for fixed-index slices in 3D and 4D arrays
 * Support for negative indexes (in preview)
 * Reverted a change where the %A and %O and `ToString`/`string` result of a union with `RequireQualifiedAccess` gave the fully-qualified union case name in response to user feedback

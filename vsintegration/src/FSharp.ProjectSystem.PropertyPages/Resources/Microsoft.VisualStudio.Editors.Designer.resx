@@ -680,7 +680,7 @@ Error:</value>
   <data name="PropPage_RemoteMachineBlankError" xml:space="preserve">
     <value>The remote machine name cannot be blank.  Please specify the name of the machine to debug remotely.</value>
   </data>
-  <data name="PropPage_ProgramNotExist" xml:space="preserve">
+  <data name="PropPage_ProgramNonexistent" xml:space="preserve">
     <value>The external program cannot be found. Please enter a valid executable file.</value>
   </data>
   <data name="PropPage_NeedExternalProgram" xml:space="preserve">
@@ -725,7 +725,7 @@ Error:</value>
   <data name="PropPage_NeedResFile" xml:space="preserve">
     <value>"Resource files must have a .res file extension. Please enter a valid resource file name."</value>
   </data>
-  <data name="PropPage_ResourceFileNotExist" xml:space="preserve">
+  <data name="PropPage_ResourceFileNonexistent" xml:space="preserve">
     <value>"The resource file entered does not exist."</value>
   </data>
   <data name="APPDES_Title" xml:space="preserve">

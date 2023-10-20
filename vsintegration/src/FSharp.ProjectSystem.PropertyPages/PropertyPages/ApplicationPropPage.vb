@@ -431,7 +431,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                     '    Return ValidationResult.Warning
                     'Else
                     If ((Not (IsNothing(Win32ResourceFile.Text)) AndAlso Win32ResourceFile.Text <> "") AndAlso Not File.Exists(Win32ResourceFile.Text)) Then
-                        message = SR.GetString(SR.PropPage_ResourceFileNotExist)
+                        message = SR.GetString(SR.PropPage_ResourceFileNonexistent)
                         Return ValidationResult.Warning
                     End If
             End Select
