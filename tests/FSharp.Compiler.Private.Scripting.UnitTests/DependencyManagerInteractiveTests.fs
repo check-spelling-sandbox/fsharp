@@ -524,7 +524,7 @@ x |> Seq.iter(fun r ->
             let idm = dp.TryFindDependencyManagerByKey(Seq.empty, "", reportError, "nuget")
             dp.Resolve(idm, ".fsx", packagemanagerlines, reportError, "net8.0")
 
-        // Expected: error FS3217: PackageManager can not reference the System Package 'FSharp.Core'
+        // Expected: error FS3217: PackageManager cannot reference the System Package 'FSharp.Core'
         Assert.False(result.Success, "resolve succeeded but should have failed")
 
     [<Fact>]

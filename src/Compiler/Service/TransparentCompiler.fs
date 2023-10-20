@@ -1636,7 +1636,7 @@ type internal TransparentCompiler
 
                 let assemblyDataResult =
                     try
-                        // Assemblies containing type provider components can not successfully be used via cross-assembly references.
+                        // Assemblies containing type provider components cannot successfully be used via cross-assembly references.
                         // We return 'None' for the assembly portion of the cross-assembly reference
                         let hasTypeProviderAssemblyAttrib =
                             topAttrs.assemblyAttrs

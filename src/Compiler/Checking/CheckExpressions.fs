@@ -2062,7 +2062,7 @@ module GeneralizationHelpers =
             List.partition (fun x -> not (Zset.contains x freeInEnv)) generalizedTypars
 
         // Some situations, e.g. implicit class constructions that represent functions as fields,
-        // do not allow generalisation over constrained typars. (since they can not be represented as fields)
+        // do not allow generalisation over constrained typars. (since they cannot be represented as fields)
         //
         // Don't generalize IsCompatFlex type parameters to avoid changing inferred types.
         let generalizedTypars, ungeneralizableTypars3 =

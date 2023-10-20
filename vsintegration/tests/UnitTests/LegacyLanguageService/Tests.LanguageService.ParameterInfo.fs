@@ -1841,13 +1841,13 @@ We really need to rewrite some code paths here to use the real parse tree rather
         this.VerifyParameterInfoContainedAtStartOfMarker(fileContents,"(*Mark*)",["int";"System.Collections.Generic.IEqualityComparer<obj>"])
 
     [<Test>]
-    [<Ignore("95862 - [Unittests] parseInfo(TypeCheckResult.TypeCheckInfo).GetMethods can not get MethodOverloads")>]
+    [<Ignore("95862 - [Unittests] parseInfo(TypeCheckResult.TypeCheckInfo).GetMethods cannot get MethodOverloads")>]
     member public this.``Multi.Generic.HashSet``() = 
         let fileContents = "System.Collections.Generic.HashSet<int>({ 1 ..12 },(*Mark*)"
         this.VerifyParameterInfoContainedAtStartOfMarker(fileContents,"(*Mark*)",["Seq<'a>";"System.Collections.Generic.IEqualityComparer<'a>"])
     
     [<Test>]
-    [<Ignore("95862 - [Unittests] parseInfo(TypeCheckResult.TypeCheckInfo).GetMethods can not get MethodOverloads")>]
+    [<Ignore("95862 - [Unittests] parseInfo(TypeCheckResult.TypeCheckInfo).GetMethods cannot get MethodOverloads")>]
     member public this.``Multi.Generic.SortedList``() = 
         let fileContents = "System.Collections.Generic.SortedList<_,option<int>> (12,(*Mark*)"
         this.VerifyParameterInfoContainedAtStartOfMarker(fileContents,"(*Mark*)",["int";"System.Collections.Generic.IComparer<'TKey>"])

@@ -27,7 +27,7 @@ open FSharp.Core.CompilerServices
 exception ObsoleteWarning of string * range
 exception ObsoleteError of string * range
 
-let fail() = failwith "This custom attribute has an argument that can not yet be converted using this API"
+let fail() = failwith "This custom attribute has an argument that cannot yet be converted using this API"
 
 let rec private evalILAttribElem elem = 
     match elem with 

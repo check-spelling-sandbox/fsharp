@@ -936,7 +936,7 @@ module Display =
     //
     // Note: The layout code forces breaks based on leaf size and possible break points.
     //       It does not force leaf size based on width.
-    //       So long leaf-string width can not depend on their printing context...
+    //       So long leaf-string width cannot depend on their printing context...
     //
     // The suffix like "+[dd chars]" is 11 chars.
     //                  12345678901

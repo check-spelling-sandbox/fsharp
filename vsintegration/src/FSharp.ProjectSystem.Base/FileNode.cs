@@ -929,7 +929,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         /// <summary>
         /// Get's called to rename the eventually running document this hierarchyitem points to
         /// </summary>
-        /// returns FALSE if the doc can not be renamed
+        /// returns FALSE if the doc cannot be renamed
         public bool RenameDocument(string oldName, string newName)
         {
             IVsRunningDocumentTable pRDT = this.GetService(typeof(IVsRunningDocumentTable)) as IVsRunningDocumentTable;

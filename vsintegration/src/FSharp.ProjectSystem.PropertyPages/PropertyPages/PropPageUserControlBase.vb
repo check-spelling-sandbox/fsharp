@@ -1504,7 +1504,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
 
         ''' <summary>
-        ''' Return a control group which contains the control, return -1 when we can not find one
+        ''' Return a control group which contains the control, return -1 when we cannot find one
         ''' </summary>
         ''' <param name="dataControl"></param>
         ''' <returns></returns>

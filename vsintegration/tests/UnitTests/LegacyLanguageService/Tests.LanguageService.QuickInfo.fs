@@ -2584,7 +2584,7 @@ query."
         this.VerifyQuickInfoDoesNotContainAnyAtStartOfMarker fileContent "``(*Marker2*)" "Option.Some"
 
     [<Test>]
-    [<Ignore("Can not get QuickInfo tips")>]
+    [<Ignore("Cannot get QuickInfo tips")>]
     member public this.``Automation.Setter``() =
         let fileContent ="""type T() =
                                  member this.XX

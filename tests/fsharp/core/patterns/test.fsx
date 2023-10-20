@@ -79,7 +79,7 @@ let (This fB | That fB) = that_f2
 
 (* If there are several polymorphic values matched,
    they get put into a tuple which has first class polymorphic field types...
-   Users can not (directly!) create such tuples in source... need to check they are ok.
+   Users cannot (directly!) create such tuples in source... need to check they are ok.
 *)
 let (Some xxxx),polyF1,polyF2,n =
   Some 1,

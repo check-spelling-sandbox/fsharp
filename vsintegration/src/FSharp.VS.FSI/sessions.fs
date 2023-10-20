@@ -12,7 +12,7 @@ open System.Threading
 
 #nowarn "52" //  The value has been copied to ensure the original is not mutated by this operation
 
-// Can not be DEBUG only since it is used by tests  
+// Cannot be DEBUG only since it is used by tests  
 let mutable timeoutAppShowMessageOnTimeOut = true
 
 open Microsoft.FSharp.Control

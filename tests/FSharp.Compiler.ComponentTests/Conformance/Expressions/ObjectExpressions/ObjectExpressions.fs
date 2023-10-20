@@ -58,7 +58,7 @@ let implSomeDU someDu =
          |> shouldSucceed
          
     [<Fact>]
-    let ``Object expression can not implement an abstract class having no abstract members.`` () =
+    let ``Object expression cannot implement an abstract class having no abstract members.`` () =
         Fsx """
 [<AbstractClass>]
 type Foo() = class end

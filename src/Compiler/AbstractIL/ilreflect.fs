@@ -1918,7 +1918,7 @@ let rec buildMethodPass3 cenv tref modB (typB: TypeBuilder) emEnv (mdef: ILMetho
     | ".cctor"
     | ".ctor" ->
         let consB = envGetConsB emEnv mref
-        // Constructors can not have generic parameters
+        // Constructors cannot have generic parameters
         assert isNil mdef.GenericParams
         // Value parameters
         let defineParameter (i, attr, name) =

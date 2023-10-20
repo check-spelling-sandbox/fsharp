@@ -424,7 +424,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                         Dim vshelp As VsHelp.Help = CType(sp.GetService(GetType(VsHelp.Help)), VsHelp.Help)
                         vshelp.DisplayTopicFromF1Keyword(HelpTopic)
                     Else
-                        System.Diagnostics.Debug.Fail("Can not find ServiceProvider")
+                        System.Diagnostics.Debug.Fail("Cannot find ServiceProvider")
                     End If
 
                 Catch ex as System.Exception

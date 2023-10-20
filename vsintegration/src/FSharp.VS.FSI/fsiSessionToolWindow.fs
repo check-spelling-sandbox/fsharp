@@ -683,7 +683,7 @@ type internal FsiToolWindow() as this =
 
             let originalFilter = textView.AddCommandFilter(this :> IOleCommandTarget) |> throwOnFailure1
             // Create a command service that will use the previous command target
-            // as parent target and will route to it the commands that it can not handle.
+            // as parent target and will route to it the commands that it cannot handle.
             if isNull commandService then
                 commandService <-             
                     if isNull originalFilter then                    

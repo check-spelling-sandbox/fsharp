@@ -2384,7 +2384,7 @@ let DoWithColor newColor f =
     match enableConsoleColoring, foreBackColor () with
     | false, _
     | true, None ->
-        // could not get console colours, so no attempt to change colours, can not set them back
+        // could not get console colours, so no attempt to change colours, cannot set them back
         f ()
     | true, Some(c, _) ->
         try

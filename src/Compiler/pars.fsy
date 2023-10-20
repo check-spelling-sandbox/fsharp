@@ -228,7 +228,7 @@ let parse_error_rich = Some(fun (ctxt: ParseErrorContext<_>) ->
  *
  * Dummy terminals (like prec_type_prefix) can assign precedence to a rule.
  * Doc says rule and (shift) token precedence resolves shift/reduce conflict.
- * It seems like dummy terminals can not assign precedence to the shift,
+ * It seems like dummy terminals cannot assign precedence to the shift,
  * but including the tokens in the precedences below will order them.
  * e.g. prec_type_prefix lower precedence than RARROW, LBRACK, IDENT, STAR (all extend types).
  */

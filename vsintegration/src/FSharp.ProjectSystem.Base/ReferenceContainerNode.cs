@@ -435,7 +435,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                     node.AddReference();
                     if (null == node.Parent)
                     {
-                        // The reference was not added, so we can not return this item because it
+                        // The reference was not added, so we cannot return this item because it
                         // is not inside the project.
                         return null;
                     }
