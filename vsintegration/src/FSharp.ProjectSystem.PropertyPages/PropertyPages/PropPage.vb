@@ -31,7 +31,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
     '
     'The only interface necessary for third parties to implement for property pages that the project designer can host is
     '   IPropertyPage.  The interfaces in Microsoft.VisualStudio.ManagedInterfaces.dll are optional for third parties to implement
-    '   in order to hook in to our undo functionality and control group validation.
+    '   in order to hook into our undo functionality and control group validation.
     '
     ' *******************
 

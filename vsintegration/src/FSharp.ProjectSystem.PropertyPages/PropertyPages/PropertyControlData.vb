@@ -51,7 +51,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         '  If the property was not found, this will have the value MissingValue.
         Private m_InitialValue As Object
 
-        'All initial values for all objects (usually configurations) passed in to SetObjects, if multiple values are supported
+        'All initial values for all objects (usually configurations) passed into SetObjects, if multiple values are supported
         '  for this property.  Generally only stored if the values were actually different.  Otherwise, this may
         '  simply be Nothing.
         Private m_AllInitialValues As Object()
@@ -334,7 +334,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
         ''' <summary>
         ''' Returns the raw set of objects in use by this property page.  This will generally be the set of objects
-        '''   passed in to the page through SetObjects.  However, it may be modified by subclasses to contain a superset
+        '''   passed into the page through SetObjects.  However, it may be modified by subclasses to contain a superset
         '''   or subset for special purposes.
         ''' </summary>
         ''' <value></value>
@@ -354,7 +354,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
         ''' <summary>
         ''' Returns the extended objects created from the raw set of objects in use by this property page.  This will generally be 
-        '''   based on the set of objects passed in to the page through SetObjects.  However, it may be modified by subclasses to 
+        '''   based on the set of objects passed into the page through SetObjects.  However, it may be modified by subclasses to 
         '''   contain a superset or subset for special purposes.
         ''' </summary>
         ''' <value></value>
@@ -643,7 +643,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
 
         ''' <summary>
-        ''' All initial values for all objects (usually configurations) passed in to SetObjects, if multiple values are supported
+        ''' All initial values for all objects (usually configurations) passed into SetObjects, if multiple values are supported
         '''   for this property.  Generally only stored if the values were actually different.  Otherwise, this may
         '''   simply be Nothing.
         ''' </summary>
@@ -1812,7 +1812,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         '  properties (an example is the VB Compile page, which access properties like "Option Explicit"
         '  which is not configuration-specific, and many pages also access the "FullPath" property via
         '  PropPageUserControlBase.ProjectPath().  These properties are pulled directly from the project system
-        '  rather than taken from the objects passed in to the property page.
+        '  rather than taken from the objects passed into the property page.
 
 
 

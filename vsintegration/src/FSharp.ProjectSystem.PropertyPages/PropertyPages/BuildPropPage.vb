@@ -425,7 +425,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         '//   of the controls related to conditional compilation symbols (the data in the
         '//   controls is not sufficient because they could be indeterminate, and we are acting
         '//   as if we have three separate properties, so we need the original property values).
-        '// Array same length and indexing as the objects passed in to SetObjects.
+        '// Array same length and indexing as the objects passed into SetObjects.
         Protected m_stCondCompSymbols() As String
 
         Protected Const Const_DebugConfiguration As String = "Debug" 'Name of the debug configuration
