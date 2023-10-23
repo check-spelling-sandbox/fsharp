@@ -5957,7 +5957,7 @@ let rec f l =
                     interface IFoo with
                         member this.DoStuff () = "Return a string"
                         member this.DoStuff2 (x, y) z = sprintf "Arguments were (%d, %d) %s" x y z
-                // instanceOfIFoo is an instance of an anonomyous class which implements IFoo
+                // instanceOfIFoo is an instance of an anonymous class which implements IFoo
                 let instanceOfIFoo = {
                                         new IFoo with
                                             member this.DoStuff () = "Implement IFoo"
