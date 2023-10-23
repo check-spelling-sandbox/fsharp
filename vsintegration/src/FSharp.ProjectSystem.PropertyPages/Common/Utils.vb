@@ -281,7 +281,7 @@ Namespace Microsoft.VisualStudio.Editors.Common
         ''' <summary>
         ''' Given an exception, returns True if it is a CheckOut exception.
         ''' </summary>
-        ''' <param name="ex">The exception to check rethrow if it's caused by cancaling checkout</param>
+        ''' <param name="ex">The exception to check rethrow if it's caused by canceling checkout</param>
         ''' <remarks></remarks>
         Public Function IsCheckoutCanceledException(ByVal ex As Exception) As Boolean
             If (TypeOf ex Is CheckoutException AndAlso ex.Equals(CheckoutException.Canceled)) _
