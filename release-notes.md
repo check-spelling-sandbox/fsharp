@@ -73,7 +73,7 @@ These release notes track our current efforts to document changes to the F# proj
 * Add MakeDeclarationMutable code fix [#10480](https://github.com/dotnet/fsharp/pull/10480)
 * Add ChangeToUpcast code fix [#10463](https://github.com/dotnet/fsharp/pull/10463)
 * Add AddMissingEqualsToTypeDefinition code fixer [#10470](https://github.com/dotnet/fsharp/pull/10470)
-* Tag items in tooltips consistenly with respect to document classification. [#9563](https://github.com/dotnet/fsharp/pull/9563)
+* Tag items in tooltips consistently with respect to document classification. [#9563](https://github.com/dotnet/fsharp/pull/9563)
 * Add ConvertToSingleEqualsEqualityExpression code fix [#10462](https://github.com/dotnet/fsharp/pull/10462)
 * Turn XML doc and Sig<->Impl mismatch warnings on by default [#10457](https://github.com/dotnet/fsharp/pull/10457)
 * Add ChangeRefCellDerefToNotExpression code fixer [#10469](https://github.com/dotnet/fsharp/pull/10469)
