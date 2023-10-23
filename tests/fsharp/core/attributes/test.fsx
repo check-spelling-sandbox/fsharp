@@ -362,7 +362,7 @@ module AttributesOnUnionCases = begin
 
 end
 
-module CheckGenericParameterAttibutesAndNames = 
+module CheckGenericParameterAttributesAndNames = 
    
     // identical in signature and implementation
     type Cases() = 
