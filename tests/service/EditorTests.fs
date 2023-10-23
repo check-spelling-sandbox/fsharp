@@ -734,7 +734,7 @@ let _ =
         su.Symbol.ToString(), (r.StartLine, r.StartColumn, r.EndLine, r.EndColumn))
     |> Array.distinct
     |> shouldEqual
-        // note: these "System" sysbol uses are not duplications because each of them corresponts to different namespaces
+        // note: these "System" sysbol uses are not duplications because each of them corresponds to different namespaces
         [|("System", (2, 5, 2, 11))
           ("ConsoleKey", (5, 10, 5, 20));
           ("field Tab", (5, 10, 5, 24));
@@ -1574,7 +1574,7 @@ let _ = Threading.Buzz = null
         su.Symbol.ToString(), (r.StartLine, r.StartColumn, r.EndLine, r.EndColumn))
     |> Array.distinct
     |> shouldEqual
-        // note: these "System" sysbol uses are not duplications because each of them corresponts to different namespaces
+        // note: these "System" sysbol uses are not duplications because each of them corresponds to different namespaces
         [|("System", (2, 5, 2, 11))
           ("Threading", (2, 12, 2, 21))
           ("System", (3, 5, 3, 11))
