@@ -23,7 +23,7 @@ These release notes track our current efforts to document changes to the F# proj
 * In FSharpExpr, FastIntegerForLoop has been renamed to IntegerForLoop 
 * SynModuleDecl.DoExpr --> SynModuleDecl.Expr because it was not corresponding to a 'do expr' declaration.
   A 'do expr' declaration in a module will correspond to a SynModuleDecl.Expr enclosing a SynExpr.Do 
-  This constructo also loses the debug point as it was always None. The debug point
+  This constructor also loses the debug point as it was always None. The debug point
   is always implicit for this construct.
 * In FCS API, FSharpParsingOptions, `CompilingFsLib` --> `CompilingFSharpCore`
 * In FCS API, FSharpParsingOptions, `ErrorSeverityOptions` --> `DiagnosticOptions`
@@ -1559,7 +1559,7 @@ Integrate dotnet/fsharp from 48f932cf8 to 085985140. Notable changes include:
 
 ### 1.4.0.2 -
 
-* #387 - types and arrays in F# attribute contructor arguments
+* #387 - types and arrays in F# attribute constructor arguments
 
 ### 1.4.0.1 - F# 4.0 support
 
