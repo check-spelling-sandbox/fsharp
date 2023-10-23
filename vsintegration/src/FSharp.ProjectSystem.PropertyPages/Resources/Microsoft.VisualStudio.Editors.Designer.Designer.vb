@@ -3690,9 +3690,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to &amp;Categories:.
         '''</summary>
-        Friend Shared ReadOnly Property RSE_CategiesLabel() As String
+        Friend Shared ReadOnly Property RSE_CategoriesLabel() As String
             Get
-                Return ResourceManager.GetString("RSE_CategiesLabel", resourceCulture)
+                Return ResourceManager.GetString("RSE_CategoriesLabel", resourceCulture)
             End Get
         End Property
         
