@@ -777,7 +777,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                     // Remove the item created by the add item. We need to do this otherwise we will have two items.
                     // Please be aware that we have not removed the ItemNode associated to the removed file node from the hierrachy.
                     // What we want to achieve here is to reuse the existing build item. 
-                    // We want to link to the newly created node to the existing item node and addd the new include.
+                    // We want to link to the newly created node to the existing item node and add the new include.
 
                     //temporarily keep properties from new itemnode since we are going to overwrite it
                     string newInclude = childAdded.ItemNode.Item.UnevaluatedInclude;
