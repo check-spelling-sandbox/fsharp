@@ -1509,7 +1509,7 @@ Integrate dotnet/fsharp from 48f932cf8 to 085985140. Notable changes include:
 
 ### 1.4.1 -
 
-* Add pause before backgrounnd work starts. The FCS request queue must be empty for 1 second before work will start
+* Add pause before background work starts. The FCS request queue must be empty for 1 second before work will start
 * Write trace information about the reactor queue to the event log
 * Rewrite reactor to consistently prioritize queued work
 * Implement cancellation for queued work if it is cancelled prior to being executed
