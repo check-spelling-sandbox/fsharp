@@ -875,7 +875,7 @@ Namespace Microsoft.VisualStudio.Editors.Common
                 Return RemoveEndingSeparator(Path)
             End If
 
-            ' Use the algorith from URI.MakeRelative.
+            ' Use the algorithm from URI.MakeRelative.
             Dim Index As Integer = 0
             Dim CommonSeparatorPosition As Integer = -1
             ' Loop until the end of a path, or different characters at an index.
