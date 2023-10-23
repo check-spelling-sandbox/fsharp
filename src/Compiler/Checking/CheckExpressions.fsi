@@ -929,7 +929,7 @@ val TcVal:
 module GeneralizationHelpers =
 
     /// Given an environment, compute the set of inference type variables which may not be
-    /// generalised, because they appear somewhere in the types of the constructs availabe
+    /// generalised, because they appear somewhere in the types of the constructs available
     /// in the environment.
     val ComputeUngeneralizableTypars: env: TcEnv -> Zset<Typar>
 
