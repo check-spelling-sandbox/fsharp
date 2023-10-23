@@ -140,7 +140,7 @@ let a6 = [1] |> List.map _.ToString()
     |> shouldSucceed
         
 [<Fact>]
-let ``Nested anonymous unary function shorthands fails because of ambigous discard`` () =
+let ``Nested anonymous unary function shorthands fails because of ambiguous discard`` () =
     FSharp """
 module One
 let a : string = {| Inner =  (fun x -> x.ToString()) |} |> _.Inner([5] |> _.[0])
