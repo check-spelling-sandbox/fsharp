@@ -356,7 +356,7 @@ module internal XmlDocumentation =
                     Assert.Exception(e)
                     reraise ()
 
-    /// Append an XmlCommnet to the segment.
+    /// Append an XmlComment to the segment.
     let AppendXmlComment
         (
             documentationProvider: IDocumentationBuilder,
