@@ -987,7 +987,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
 
 
         /// <summary>
-        /// Gets or set the relative path to the folder containing the project ouput. 
+        /// Gets or set the relative path to the folder containing the project output. 
         /// </summary>
         public virtual string OutputBaseRelativePath
         {
