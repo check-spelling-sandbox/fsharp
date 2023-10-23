@@ -147,7 +147,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             return VSConstants.E_NOTIMPL;
         }
 
-        public virtual int OnAfterAsynchOpenProject(IVsHierarchy hierarchy, int added)
+        public virtual int OnAfterAsyncOpenProject(IVsHierarchy hierarchy, int added)
         {
             return VSConstants.E_NOTIMPL;
         }
