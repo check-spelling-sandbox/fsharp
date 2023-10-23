@@ -1156,7 +1156,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
 
         ''' <summary>
-        ''' Fired when the conditional compilations contants textbox has changed.  We are manually handling
+        ''' Fired when the conditional compilations contents textbox has changed.  We are manually handling
         '''   events associated with this control, so we need to recalculate related values
         ''' </summary>
         ''' <param name="sender"></param>
@@ -1355,7 +1355,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
 
         ''' <summary>
-        ''' Fired when the conditional compilations contants textbox has changed.  We are manually handling
+        ''' Fired when the conditional compilations contents textbox has changed.  We are manually handling
         '''   events associated with this control, so we need to recalculate related values
         ''' </summary>
         ''' <param name="sender"></param>
