@@ -928,7 +928,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                     End If
 
                 ElseIf Not Handled AndAlso Me.FormControl IsNot Nothing Then
-                    ' If we have a contol associated with this property, and we don't have a set callback, or the 
+                    ' If we have a control associated with this property, and we don't have a set callback, or the 
                     ' set callback didn't handle updating the control (Handled = false), we use the default setter 
                     ' to update the associated control's UI.
                     '
