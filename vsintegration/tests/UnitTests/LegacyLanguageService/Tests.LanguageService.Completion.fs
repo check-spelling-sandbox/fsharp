@@ -7514,7 +7514,7 @@ let rec f l =
 
     //Regression Test of 4405:intelisense has wrong type for identifier, using most recently bound of same name rather than the one in scope?
     [<Test>]
-    member this.``Regression4405.Identifier.ReBinded``() =
+    member this.``Regression4405.Identifier.ReBound``() =
         this.VerifyDotCompListContainAllAtStartOfMarker(
             fileContents = """
                 let f x = 
