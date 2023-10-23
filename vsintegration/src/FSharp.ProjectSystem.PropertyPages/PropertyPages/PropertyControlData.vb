@@ -71,7 +71,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         Protected m_FormControl As System.Windows.Forms.Control
         Protected m_PropPage As PropPageUserControlBase
 
-        Protected m_isCommitingChange As Boolean
+        Protected m_isCommittingChange As Boolean
 
         'Used by PropertyDescriptorSetValue to know whether or not the 
         '  OnValueChanged event fired on the property descriptor
@@ -479,7 +479,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                         Return
                     End If
 
-                    If m_isCommitingChange Then
+                    If m_isCommittingChange Then
                         ' we should prevent committing change twice because, we could pop error message boxes, or check-out box at that time, which could cause LostFocus...
                         Return
                     End If
@@ -491,10 +491,10 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                     End If
 
                     Try
-                        m_isCommitingChange = True
+                        m_isCommittingChange = True
                         Me.IsDirtyCore = True
                     Finally
-                        m_isCommitingChange = False
+                        m_isCommittingChange = False
                     End Try
                 Else
                     Me.IsDirtyCore = False
