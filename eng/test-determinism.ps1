@@ -148,7 +148,7 @@ function Record-Binaries([string]$rootDir) {
 
 # This is a sanity check to ensure that we're actually putting the right entries into
 # the core data map. Essentially to ensure things like if we change our directory layout
-# that this test fails beacuse we didn't record the binaries we intended to record.
+# that this test fails because we didn't record the binaries we intended to record.
 function Test-MapContents($dataMap) {
 
   # Sanity check to ensure we didn't return a false positive because we failed
