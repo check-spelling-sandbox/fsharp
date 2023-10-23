@@ -1282,9 +1282,9 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Returns the Cannonical Name
+        /// Returns the Canonical Name
         /// </summary>
-        /// <returns>Cannonical Name</returns>
+        /// <returns>Canonical Name</returns>
         public virtual string GetCanonicalName()
         {
             return this.GetMkDocument();
@@ -2589,7 +2589,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             // the root
             itemId = 0;
 
-            // The default implemenation will check for case insensitive comparision.
+            // The default implemenation will check for case-insensitive comparision.
             if (String.Compare(name, this.Url, StringComparison.OrdinalIgnoreCase) == 0)
             {
                 itemId = this.hierarchyId;

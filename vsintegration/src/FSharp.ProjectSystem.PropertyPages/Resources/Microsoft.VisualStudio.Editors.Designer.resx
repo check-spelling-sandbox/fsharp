@@ -1616,7 +1616,7 @@ CONSIDER: get this from CodeDom</comment>
     <value />
     <comment>Whether or not to bold the font on category buttons (e.g. "Strings", "Images") when they contain one or more resources.  If this resource string is set to anything other than an empty string, this bolding behavior will be turned off</comment>
   </data>
-  <data name="RSE_CategiesLabel" xml:space="preserve">
+  <data name="RSE_CategoriesLabel" xml:space="preserve">
     <value>&amp;Categories:</value>
     <comment>The label in the menu strip for the combobox that holds the categories of resources to display</comment>
   </data>

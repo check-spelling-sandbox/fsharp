@@ -597,7 +597,7 @@ End Namespace
 '        Friend Const RSE_Font_StringTable As String = "RSE_Font_StringTable"
 '        Friend Const RSE_Font_ListView As String = "RSE_Font_ListView"
 '        Friend Const RSE_NoBoldFontsInCategoryButtons As String = "RSE_NoBoldFontsInCategoryButtons"
-'        Friend Const RSE_CategiesLabel As String = "RSE_CategiesLabel"
+'        Friend Const RSE_CategoriesLabel As String = "RSE_CategoriesLabel"
 '        Friend Const RSE_PropDesc_Name As String = "RSE_PropDesc_Name"
 '        Friend Const RSE_PropDesc_Comment As String = "RSE_PropDesc_Comment"
 '        Friend Const RSE_PropDesc_Encoding As String = "RSE_PropDesc_Encoding"
