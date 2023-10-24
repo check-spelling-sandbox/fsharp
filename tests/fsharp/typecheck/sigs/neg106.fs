@@ -23,7 +23,7 @@ module TryGetValueTests_Negative1 =
         let v =  d.TryGetValue(3, &res) //  'inref<int,>' is not compatible with type 'byref<int>'
         ()
 
-module FSharpDeclaredOutParamTest_Negaative1  = 
+module FSharpDeclaredOutParamTest_Negative1  = 
     type C() = 
          static member M([<System.Runtime.InteropServices.Out>] x: byref<int>) = ()
     let Test() = 
