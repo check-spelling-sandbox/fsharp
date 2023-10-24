@@ -3617,7 +3617,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Determines whether an item can be owerwritten in the hierarchy.
+        /// Determines whether an item can be overwritten in the hierarchy.
         /// </summary>
         /// <param name="originalFileName">The original filename.</param>
         /// <param name="computedNewFileName">The computed new file name, that will be copied to the project directory or into the folder .</param>
