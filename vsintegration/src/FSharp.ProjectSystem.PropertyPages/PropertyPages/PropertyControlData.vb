@@ -1424,7 +1424,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         ''' <param name="Extenders">The list of extenders to pass to the descriptor's GetValue function</param>
         ''' <param name="Values">[out] An array containing the value for the property using each of the extenders.</param>
         ''' <param name="ValueOrIndeterminate">[out] A single value representing the combination of all values in Values.  If all Values are the same,
-        '''   that value is returned.  If they differ, PropertyControlData.Inderminate is returned.  If the property descriptor is missing,
+        '''   that value is returned.  If they differ, PropertyControlData.Indeterminate is returned.  If the property descriptor is missing,
         '''   PropertyControlData.MissingProperty is returned.
         ''' </param>
         ''' <remarks></remarks>
@@ -1442,7 +1442,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         ''' <param name="Extenders">The list of extenders to pass to the descriptor's GetValue function</param>
         ''' <param name="Values">[out] An array containing the value for the property using each of the extenders.</param>
         ''' <param name="ValueOrIndeterminate">[out] A single value representing the combination of all values in Values.  If all Values are the same,
-        '''   that value is returned.  If they differ, PropertyControlData.Inderminate is returned.  If the property descriptor is missing,
+        '''   that value is returned.  If they differ, PropertyControlData.Indeterminate is returned.  If the property descriptor is missing,
         '''   PropertyControlData.MissingProperty is returned.
         ''' </param>
         ''' <remarks></remarks>
@@ -1966,7 +1966,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
         ''' <summary>
         ''' Restore the initial value of a property into the property's control (or user-persisted store).
-        '''   This is done after a non-immmediate (child) property page is canceled in order to restore
+        '''   This is done after a non-immediate (child) property page is canceled in order to restore
         '''   the page's original values into the control.
         ''' </summary>
         ''' <remarks></remarks>

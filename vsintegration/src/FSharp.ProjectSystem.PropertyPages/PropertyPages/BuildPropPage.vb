@@ -1338,7 +1338,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         '    should only affect the Debug configuration.
         '    For the TRACE constant checkbox, we want the normal behavior (show indeterminate if they're different, but they
         '    won't be for the default templates in simplified configs mode).
-        '    The conditional compilation textbox likewise should show indetermine if the debug and release values differ, but
+        '    The conditional compilation textbox likewise should show indeterminate if the debug and release values differ, but
         '    for the default templates they won't.
         '    This behavior is not easy to get, because the DEBUG/TRACE checkboxes are not actual properties in C# like they
         '    are in VB, but are rather parsed from the conditional compilation value.  The conditional compilation textbox
@@ -1552,7 +1552,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
                 'Figure out whether the values each configuration are the same or different.  For each
                 '  of these properties, get either the value which is the same across all of the values,
-                '  or get a value of Inderminate.
+                '  or get a value of Indeterminate.
                 Dim DebugDefined As Object = GetValueOrIndeterminateFromArray(DebugDefinedValues)
                 Dim TraceDefined As Object = GetValueOrIndeterminateFromArray(TraceDefinedValues)
                 Dim OtherConstants As Object = GetValueOrIndeterminateFromArray(OtherConstantsValues)
