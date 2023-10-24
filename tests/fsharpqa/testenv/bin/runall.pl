@@ -4557,7 +4557,7 @@ sub RunMultiProcess() {
 
     my %test_to_id;       # map a test name to all its indices in @testlist (semicolon separated)
     my $test;
-    my @has_predecessors; # 1 if the test has (unresolved) precessors
+    my @has_predecessors; # 1 if the test has (unresolved) predecessors
     my @has_successors;   # 1 if the others depend upon this test
     my %dependents;       # see read_dependence.
 
