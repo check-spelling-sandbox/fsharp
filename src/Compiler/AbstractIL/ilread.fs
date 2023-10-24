@@ -4601,10 +4601,10 @@ let openPEFileReader (fileName, pefile: BinaryFile, noFileOnDisk) =
     let _headerPhysSize = seekReadInt32 pev (peOptionalHeaderPhysLoc + 60) // Header Size Combined size of MS-DOS Header, PE Header, PE Optional Header and padding
     let subsys = seekReadUInt16 pev (peOptionalHeaderPhysLoc + 68) // SubSystem Subsystem required to run this image.
 
-    let useHighEnthropyVA =
+    let useHighEntropyVA =
         let n = seekReadUInt16 pev (peOptionalHeaderPhysLoc + 70)
-        let highEnthropyVA = 0x20us
-        (n &&& highEnthropyVA) = highEnthropyVA
+        let highEntropyVA = 0x20us
+        (n &&& highEntropyVA) = highEntropyVA
 
     (* x86: 000000e0 *)
 
@@ -4804,7 +4804,7 @@ let openPEFileReader (fileName, pefile: BinaryFile, noFileOnDisk) =
     let peinfo =
         (subsys,
          (subsysMajor, subsysMinor),
-         useHighEnthropyVA,
+         useHighEntropyVA,
          ilOnly,
          only32,
          is32bitpreferred,
