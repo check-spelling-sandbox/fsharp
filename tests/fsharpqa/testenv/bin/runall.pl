@@ -3399,7 +3399,7 @@ sub check_maxtests
 }
 
 #
-# check_target -- check whether a test is run for the target plaform
+# check_target -- check whether a test is run for the target platform
 #
 # Returns non-zero if the test should be run, zero otherwise.
 #
