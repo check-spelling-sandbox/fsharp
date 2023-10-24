@@ -980,7 +980,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         ''' </summary>
         ''' <param name="HelpDir">Not used.</param>
         ''' <remarks></remarks>
-        Private Sub IProperyPageInternal_Help(ByVal HelpDir As String) Implements IPropertyPageInternal.Help
+        Private Sub IPropertyPageInternal_Help(ByVal HelpDir As String) Implements IPropertyPageInternal.Help
             DesignerFramework.DesignUtil.DisplayTopicFromF1Keyword(ServiceProvider, GetF1HelpKeyword)
         End Sub
 
