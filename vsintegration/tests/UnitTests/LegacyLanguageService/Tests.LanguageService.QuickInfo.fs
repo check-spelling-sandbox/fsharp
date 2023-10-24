@@ -1444,7 +1444,7 @@ let f (tp:ITypeProvider(*$$$*)) = tp.Invalidate
              [<System.AttributeUsage(System.AttributeTargets.All, Inherited = false)>]
              type A() = 
                do ()"""
-             "Inherite" "Inherited"  // Get the tooltip at "Inherite" & Verify that it contains the 'Inherited' fild exactly once
+             "Inherite" "Inherited"  // Get the tooltip at "Inherite" & Verify that it contains the 'Inherited' field exactly once
         
     [<Test>]
     member public this.``MethodAndPropTooltip``() = 
