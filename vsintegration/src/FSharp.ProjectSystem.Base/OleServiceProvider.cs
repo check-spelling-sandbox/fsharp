@@ -159,7 +159,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             // of the parameter here because the constructor of ServiceData will do it for us.
             ServiceData service = new ServiceData(serviceType, serviceInstance, null, shouldDisposeServiceInstance);
 
-            // Now add the service desctription to the dictionary.
+            // Now add the service description to the dictionary.
             AddService(service);
         }
 
@@ -169,7 +169,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             // of the parameter here because the constructor of ServiceData will do it for us.
             ServiceData service = new ServiceData(serviceType, null, callback, shouldDisposeServiceInstance);
 
-            // Now add the service desctription to the dictionary.
+            // Now add the service description to the dictionary.
             AddService(service);
         }
 
