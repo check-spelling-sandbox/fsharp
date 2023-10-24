@@ -5173,7 +5173,7 @@ let x = query { for bbbb in abbbbc(*D0*) do
             marker = "(*Marker1*)",
             list = ["PrivateField"; "PrivateMethod"; "PrivateType"])                 
          
-    // Regression for bug 2116 -- Consider making selected item in completion list case-insensitiv         
+    // Regression for bug 2116 -- Consider making selected item in completion list case-insensitive       
     [<Test>]
     member this.``CaseInsensitive``() =
         this.VerifyCtrlSpaceListContainAllAtStartOfMarker(
