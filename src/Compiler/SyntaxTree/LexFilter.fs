@@ -1548,7 +1548,7 @@ type LexFilterImpl (
         // The 'IN' token is thrown away and becomes an ODECLEND
         | IN, CtxtLetDecl (blockLet, offsidePos) :: _ ->
             if debug then dprintf "IN at %a (becomes %s)\n" outputPos tokenStartPos (if blockLet then "ODECLEND" else "IN")
-            if tokenStartCol < offsidePos.Column then warn tokenTup (FSComp.SR.lexfltIncorrentIndentationOfIn())
+            if tokenStartCol < offsidePos.Column then warn tokenTup (FSComp.SR.lexfltIncorrectIndentationOfIn())
             popCtxt()
             // Make sure we queue a dummy token at this position to check if any other pop rules apply
             delayToken(pool.UseLocation(tokenTup, ODUMMY token))
