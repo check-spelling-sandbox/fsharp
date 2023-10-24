@@ -409,7 +409,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             }
             catch (Exception e)
             {
-                Debug.Assert(false, "Problem logging projectstarted event: " + e.Message + " at " + e.TargetSite);
+                Debug.Assert(false, "Problem logging project started event: " + e.Message + " at " + e.TargetSite);
                 // swallow the exception
             }
 		}
