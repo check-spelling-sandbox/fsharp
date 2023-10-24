@@ -788,7 +788,7 @@ val TcTyparConstraints:
     cenv: TcFileState ->
     newOk: ImplicitlyBoundTyparsAllowed ->
     checkConstraints: CheckConstraints ->
-    occ: ItemOccurence ->
+    occ: ItemOccurrence ->
     env: TcEnv ->
     tpenv: UnscopedTyparEnv ->
     synConstraints: SynTypeConstraint list ->
@@ -802,7 +802,7 @@ val TcType:
     cenv: TcFileState ->
     newOk: ImplicitlyBoundTyparsAllowed ->
     checkConstraints: CheckConstraints ->
-    occ: ItemOccurence ->
+    occ: ItemOccurrence ->
     iwsam: WarnOnIWSAM ->
     env: TcEnv ->
     tpenv: UnscopedTyparEnv ->
@@ -815,7 +815,7 @@ val TcTypeOrMeasureAndRecover:
     cenv: TcFileState ->
     newOk: ImplicitlyBoundTyparsAllowed ->
     checkConstraints: CheckConstraints ->
-    occ: ItemOccurence ->
+    occ: ItemOccurrence ->
     iwsam: WarnOnIWSAM ->
     env: TcEnv ->
     tpenv: UnscopedTyparEnv ->
@@ -827,7 +827,7 @@ val TcTypeAndRecover:
     cenv: TcFileState ->
     newOk: ImplicitlyBoundTyparsAllowed ->
     checkConstraints: CheckConstraints ->
-    occ: ItemOccurence ->
+    occ: ItemOccurrence ->
     iwsam: WarnOnIWSAM ->
     env: TcEnv ->
     tpenv: UnscopedTyparEnv ->
