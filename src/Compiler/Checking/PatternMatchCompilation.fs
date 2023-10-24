@@ -1358,7 +1358,7 @@ let CompilePatternBasic
                          let aparity = apinfo.ActiveTags.Length
                          let total = apinfo.IsTotal
                          if not total && aparity > 1 then
-                             error(Error(FSComp.SR.patcPartialActivePatternsGenerateOneResult(), m))
+                             error(Error(FSComp.SR.matchPartialActivePatternsGenerateOneResult(), m))
 
                          if not total then DecisionTreeTest.UnionCase(mkAnySomeCase g isStructRetTy, resTys)
                          elif aparity <= 1 then DecisionTreeTest.Const(Const.Unit)
