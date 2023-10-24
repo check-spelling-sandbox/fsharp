@@ -161,7 +161,7 @@
     <MicrosoftVisualStudioExtensibilityTestingVersion>0.1.169-beta</MicrosoftVisualStudioExtensibilityTestingVersion>
     <MicrosoftVisualStudioExtensibilityTestingSourceGeneratorVersion>$(MicrosoftVisualStudioExtensibilityTestingVersion)</MicrosoftVisualStudioExtensibilityTestingSourceGeneratorVersion>
     <MicrosoftVisualStudioExtensibilityTestingXunitVersion>$(MicrosoftVisualStudioExtensibilityTestingVersion)</MicrosoftVisualStudioExtensibilityTestingXunitVersion>
-    <!-- Visual Studio Threading packags -->
+    <!-- Visual Studio Threading packages -->
     <MicrosoftVisualStudioThreadingVersion>$(MicrosoftVisualStudioThreadingPackagesVersion)</MicrosoftVisualStudioThreadingVersion>
     <!-- Visual Studio Project System packages-->
     <MicrosoftVisualStudioProjectSystemVersion>$(VisualStudioProjectSystemPackagesVersion)</MicrosoftVisualStudioProjectSystemVersion>
