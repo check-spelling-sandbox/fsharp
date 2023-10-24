@@ -102,8 +102,8 @@ type AttribInfo =
                     let obj = evalFSharpAttribArg g evaluatedExpr
                     ty, obj) 
          | ILAttribInfo (_g, amap, scoref, cattr, m) -> 
-              let parms, _args = decodeILAttribData cattr 
-              [ for argTy, arg in Seq.zip cattr.Method.FormalArgTypes parms ->
+              let params_, _args = decodeILAttribData cattr 
+              [ for argTy, arg in Seq.zip cattr.Method.FormalArgTypes params_ ->
                     let ty = RescopeAndImportILType scoref amap m [] argTy
                     let obj = evalILAttribElem arg
                     ty, obj ]
@@ -117,7 +117,7 @@ type AttribInfo =
                     let obj = evalFSharpAttribArg g evaluatedExpr
                     ty, nm, isField, obj) 
          | ILAttribInfo (_g, amap, scoref, cattr, m) -> 
-              let _parms, namedArgs = decodeILAttribData cattr 
+              let _params_, namedArgs = decodeILAttribData cattr 
               [ for nm, argTy, isProp, arg in namedArgs ->
                     let ty = RescopeAndImportILType scoref amap m [] argTy
                     let obj = evalILAttribElem arg

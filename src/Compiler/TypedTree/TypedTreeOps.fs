@@ -8035,8 +8035,8 @@ let isTypeProviderAssemblyAttr (cattr: ILAttribute) =
 
 let TryDecodeTypeProviderAssemblyAttr (cattr: ILAttribute) : string MaybeNull option = 
     if isTypeProviderAssemblyAttr cattr then 
-        let parms, _args = decodeILAttribData cattr 
-        match parms with // The first parameter to the attribute is the name of the assembly with the compiler extensions.
+        let params_, _args = decodeILAttribData cattr 
+        match params_ with // The first parameter to the attribute is the name of the assembly with the compiler extensions.
         | ILAttribElem.String (Some assemblyName) :: _ -> Some assemblyName
         | ILAttribElem.String None :: _ -> Some null
         | [] -> Some null
