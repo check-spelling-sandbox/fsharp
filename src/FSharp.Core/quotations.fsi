@@ -1255,7 +1255,7 @@ type Expr =
     /// Expr.TryGetReflectedDefinition(methInfoAtString)
     /// </code>
     /// Evaluates to a quotation with the same structure as <c>&lt;@ fun (x: string) -> (x, x) @&gt;</c>, which is the implementation of the
-    /// generic method <c>f</c> instanatiated at type <c>string</c>.
+    /// generic method <c>f</c> instantiated at type <c>string</c>.
     /// </example>
     static member TryGetReflectedDefinition: methodBase: MethodBase -> Expr option
 
