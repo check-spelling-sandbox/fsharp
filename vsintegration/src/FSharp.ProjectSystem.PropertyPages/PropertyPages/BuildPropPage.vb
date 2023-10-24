@@ -497,7 +497,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
             Dim PlatformEntries As New List(Of String)
 
-            ' Let's try to sniff the supported platforms from our hiearchy (if any)
+            ' Let's try to sniff the supported platforms from our hierarchy (if any)
             If Me.ProjectHierarchy IsNot Nothing Then
                 Dim oCfgProv As Object = Nothing
                 Dim hr As Integer
