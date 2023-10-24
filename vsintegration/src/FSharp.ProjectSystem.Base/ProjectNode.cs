@@ -4611,7 +4611,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         public virtual int GetCfgProvider(out IVsCfgProvider p)
         {
             CCITracing.TraceCall();
-            // Be sure to call the property here since that is doing a polymorhic ProjectConfig creation.
+            // Be sure to call the property here since that is doing a polymorphic ProjectConfig creation.
             p = this.ConfigProvider;
             return (p == null ? VSConstants.E_NOTIMPL : VSConstants.S_OK);
         }
