@@ -83,7 +83,7 @@ function ReadGlobalJsonNativeTools {
     #   KEY="<entry-key>" VALUE="<entry-value>"
     # followed by a null byte.
     #
-    # bash: read line with null byte delimeter and push to array (for later `eval`uation).
+    # bash: read line with null byte delimiter and push to array (for later `eval`uation).
 
     while IFS= read -rd '' line; do
       native_assets+=("$line")
