@@ -3701,7 +3701,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Defines whther the current mode of the project is in a suppress command mode.
+        /// Defines whether the current mode of the project is in a suppress command mode.
         /// </summary>
         /// <returns></returns>
         public virtual bool IsCurrentStateASuppressCommandsMode()
