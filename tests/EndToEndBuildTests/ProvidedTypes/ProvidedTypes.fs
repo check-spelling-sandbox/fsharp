@@ -5626,12 +5626,12 @@ namespace ProviderImplementation.ProvidedTypes.AssemblyReader
 
             and byteAsCallConv b =
                 let cc =
-                    let ccMaxked = b &&& 0x0Fuy
-                    if ccMaxked =  e_IMAGE_CEE_CS_CALLCONV_FASTCALL then ILArgConvention.FastCall
-                    elif ccMaxked = e_IMAGE_CEE_CS_CALLCONV_STDCALL then ILArgConvention.StdCall
-                    elif ccMaxked = e_IMAGE_CEE_CS_CALLCONV_THISCALL then ILArgConvention.ThisCall
-                    elif ccMaxked = e_IMAGE_CEE_CS_CALLCONV_CDECL then ILArgConvention.CDecl
-                    elif ccMaxked = e_IMAGE_CEE_CS_CALLCONV_VARARG then ILArgConvention.VarArg
+                    let ccMasked = b &&& 0x0Fuy
+                    if ccMasked =  e_IMAGE_CEE_CS_CALLCONV_FASTCALL then ILArgConvention.FastCall
+                    elif ccMasked = e_IMAGE_CEE_CS_CALLCONV_STDCALL then ILArgConvention.StdCall
+                    elif ccMasked = e_IMAGE_CEE_CS_CALLCONV_THISCALL then ILArgConvention.ThisCall
+                    elif ccMasked = e_IMAGE_CEE_CS_CALLCONV_CDECL then ILArgConvention.CDecl
+                    elif ccMasked = e_IMAGE_CEE_CS_CALLCONV_VARARG then ILArgConvention.VarArg
                     else  ILArgConvention.Default
                 let generic = (b &&& e_IMAGE_CEE_CS_CALLCONV_GENERIC) <> 0x0uy
                 generic, Callconv (byteAsHasThis b,cc)
