@@ -26,7 +26,7 @@ Namespace Microsoft.VisualStudio.Editors.Common
         Private Const PROJECTPROPERTY_BUILDACTION As String = "BuildAction"
 
         ''' <summary>
-        ''' This is a shared class - disallow instantation.
+        ''' This is a shared class - disallow instantiation.
         ''' </summary>
         ''' <remarks></remarks>
         Private Sub New()
