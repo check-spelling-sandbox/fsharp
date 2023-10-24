@@ -6021,7 +6021,7 @@ let rec f l =
         this.VerifyDotCompListDoesNotContainAnyAtStartOfMarker(
             fileContents = """
                 open System
-                //difine the base class
+                //define the base class
                 type Widget() = 
                     let mutable state = 0 
                     member internal x.MethodInternal() = state 
@@ -6047,7 +6047,7 @@ let rec f l =
         this.VerifyDotCompListContainAllAtStartOfMarker(
             fileContents = """
                 open System
-                //difine the base class
+                //define the base class
                 type Widget() = 
                     let mutable state = 0 
                     member internal x.MethodInternal() = state 
