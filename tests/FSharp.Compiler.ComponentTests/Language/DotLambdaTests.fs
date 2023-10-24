@@ -19,7 +19,7 @@ printfn "%s" x"""
     |> shouldSucceed
 
 [<Fact>]
-let ``Underscore Dot ToString With Space Before Paranthesis - NonAtomic`` () =    
+let ``Underscore Dot ToString With Space Before Parenthesis - NonAtomic`` () =    
     Fsx """
 let x = "a" |> _.ToString () """
     |> withLangVersion80
