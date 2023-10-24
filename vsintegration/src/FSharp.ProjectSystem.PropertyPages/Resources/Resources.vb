@@ -556,7 +556,7 @@ End Namespace
 '        Friend Const RSE_Type_BinaryFile As String = "RSE_Type_BinaryFile"
 '        Friend Const RSE_Type_Wave As String = "RSE_Type_Wave"
 '        Friend Const RES_PersistenceMode_Linked As String = "RES_PersistenceMode_Linked"
-'        Friend Const RES_PersistenceMode_Embeded As String = "RES_PersistenceMode_Embeded"
+'        Friend Const RES_PersistenceMode_Embedded As String = "RES_PersistenceMode_Embedded"
 '        Friend Const RSE_Filter_Bitmap As String = "RSE_Filter_Bitmap"
 '        Friend Const RSE_Filter_Icon As String = "RSE_Filter_Icon"
 '        Friend Const RSE_Filter_Audio As String = "RSE_Filter_Audio"

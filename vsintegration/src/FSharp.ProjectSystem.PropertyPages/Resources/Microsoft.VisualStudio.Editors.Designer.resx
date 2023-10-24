@@ -1413,7 +1413,7 @@ CONSIDER: get this from CodeDom</comment>
     <value>Linked at compile time</value>
     <comment>File Persistence Mode</comment>
   </data>
-  <data name="RES_PersistenceMode_Embeded" xml:space="preserve">
+  <data name="RES_PersistenceMode_Embedded" xml:space="preserve">
     <value>Embedded in .resx</value>
     <comment>File Persistence Mode</comment>
   </data>

@@ -3389,9 +3389,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to Embedded in .resx.
         '''</summary>
-        Friend Shared ReadOnly Property RES_PersistenceMode_Embeded() As String
+        Friend Shared ReadOnly Property RES_PersistenceMode_Embedded() As String
             Get
-                Return ResourceManager.GetString("RES_PersistenceMode_Embeded", resourceCulture)
+                Return ResourceManager.GetString("RES_PersistenceMode_Embedded", resourceCulture)
             End Get
         End Property
         
