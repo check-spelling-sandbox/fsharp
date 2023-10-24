@@ -104,7 +104,7 @@ async function run() {
       return;
     }
 
-    // prepate the GitHub PR details
+    // prepare the GitHub PR details
     let backport_pr_title = core.getInput("pr_title_template");
     let backport_pr_description = core.getInput("pr_description_template");
 
