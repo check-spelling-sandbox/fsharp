@@ -7512,7 +7512,7 @@ let rec f l =
             marker = "(*Marker*)",
             list = ["AsyncGetResponse";"GetResponseAsync";"ToString"])  
 
-    //Regression Test of 4405:intelisense has wrong type for identifier, using most recently bound of same name rather than the one in scope?
+    //Regression Test of 4405:intellisense has wrong type for identifier, using most recently bound of same name rather than the one in scope?
     [<Test>]
     member this.``Regression4405.Identifier.ReBound``() =
         this.VerifyDotCompListContainAllAtStartOfMarker(
