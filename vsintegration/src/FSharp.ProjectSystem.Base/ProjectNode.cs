@@ -4319,7 +4319,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
 
         /// <summary>
         /// Given a node determines what is the directory that can accept files.
-        /// If the node is a FoldeNode than it is the Url of the Folder.
+        /// If the node is a FolderNode than it is the Url of the Folder.
         /// If the node is a ProjectNode it is the project folder.
         /// Otherwise (such as FileNode subitem) it delegate the resolution to the parent node.
         /// </summary>
