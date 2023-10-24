@@ -273,7 +273,7 @@ Namespace Microsoft.VisualStudio.Editors.Common
         End Function
 
         ''' <summary>
-        ''' Given a hierarhy, determine if this is a devices project...
+        ''' Given a hierarchy, determine if this is a devices project...
         ''' </summary>
         ''' <param name="hierarchy"></param>
         ''' <returns></returns>
