@@ -1058,7 +1058,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                     Dim obj As Object = Nothing
 
                     '// Get OutputPath for all configs. We're going to calculate the documentation file
-                    '// for each config (and the value is dependant on the OutputPath
+                    '// for each config (and the value is dependent on the OutputPath
 
                     Dim RawDocFiles() As Object = RawPropertiesObjects(GetPropertyControlData(VsProjPropId.VBPROJPROPID_DocumentationFile))
                     Dim OutputPathData() As Object
