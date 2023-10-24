@@ -468,7 +468,7 @@ let ``Multi-project`` signatureFiles =
 
 
 type ProjectAction = Get | Modify of (SyntheticProject -> SyntheticProject)
-type ProjectModificaiton = Update of int | Add | Remove
+type ProjectModification = Update of int | Add | Remove
 type ProjectRequest = ProjectAction * AsyncReplyChannel<SyntheticProject>
 
 type FuzzingEvent = StartedChecking | FinishedChecking of bool | AbortedChecking of string | ModifiedImplFile | ModifiedSigFile
