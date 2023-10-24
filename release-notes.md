@@ -1621,7 +1621,7 @@ Integrate dotnet/fsharp from 48f932cf8 to 085985140. Notable changes include:
 
 ### 0.0.80 -
 
-* Update to latest F# 3.1.3 (inclunding updated FsLex/FsYacc used in build of FCS)
+* Update to latest F# 3.1.3 (including updated FsLex/FsYacc used in build of FCS)
 * Report printf specifiers from Service API
 * Improve Accessibility of non-F# symbols
 
