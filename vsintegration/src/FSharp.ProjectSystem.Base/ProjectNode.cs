@@ -3664,7 +3664,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Handle owerwriting of an existing item in the hierarchy.
+        /// Handle overwriting of an existing item in the hierarchy.
         /// </summary>
         /// <param name="existingNode">The node that exists.</param>
         public virtual void OverwriteExistingItem(HierarchyNode existingNode)
