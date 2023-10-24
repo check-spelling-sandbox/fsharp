@@ -636,7 +636,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// This is the project instance guid that is peristed in the project file
+        /// This is the project instance guid that is persisted in the project file
         /// </summary>
         [System.ComponentModel.BrowsableAttribute(false)]
         [SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "ID")]
