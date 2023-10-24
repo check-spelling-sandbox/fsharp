@@ -67,7 +67,7 @@ module internal GotoDefinition =
                 |> GotoDefinitionResult_DEPRECATED.MakeError
             | Some(colIdent, tag, qualId) ->
                 if typedResults.HasFullTypeCheckInfo then 
-                    // Used to be the Parser's internal definition, now hard-coded to avoid an IVT into the parser itsef.
+                    // Used to be the Parser's internal definition, now hard-coded to avoid an IVT into the parser itself.
                     // Dead code (aside from legacy tests), ignore
                     if tag <> FSharpTokenTag.IDENT then
                         Strings.GotoDefinitionFailed_NotIdentifier()
