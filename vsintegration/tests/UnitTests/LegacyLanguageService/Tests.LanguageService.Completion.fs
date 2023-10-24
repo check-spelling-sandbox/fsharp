@@ -249,7 +249,7 @@ type UsingMSBuild() as this  =
         let completions = time1 AutoCompleteAtCursor file "Time of first autocomplete."
         AssertCompListIsEmpty(completions)      
 
-   /////Helper Functios 
+   /////Helper Functions 
         //DotCompList ContainAll At End Of Marker Helper Function
     member private this.VerifyDotCompListContainAllAtEndOfMarker(fileContents : string, marker : string, list : string list) =
         let (solution, project, file) = this.CreateSingleFileProject(fileContents)
