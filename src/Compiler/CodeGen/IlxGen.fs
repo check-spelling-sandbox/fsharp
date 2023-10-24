@@ -8222,7 +8222,7 @@ and GenBindingAfterDebugPoint cenv cgbuf eenv bind isStateVar startMarkOpt =
 
     let access = ComputeMethodAccessRestrictedBySig eenv vspec
 
-    // Workaround for .NET and Visual Studio restriction w.r.t debugger type proxys
+    // Workaround for .NET and Visual Studio restriction w.r.t debugger type proxies
     // Mark internal constructors in internal classes as public.
     let access =
         if
