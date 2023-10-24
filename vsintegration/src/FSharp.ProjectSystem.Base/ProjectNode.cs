@@ -3619,7 +3619,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         /// <summary>
         /// Determines whether an item can be owerwritten in the hierarchy.
         /// </summary>
-        /// <param name="originalFileName">The orginal filename.</param>
+        /// <param name="originalFileName">The original filename.</param>
         /// <param name="computedNewFileName">The computed new file name, that will be copied to the project directory or into the folder .</param>
         /// <returns>S_OK for success, or an error message</returns>
         public virtual int CanOverwriteExistingItem(string originalFileName, string computedNewFileName)
