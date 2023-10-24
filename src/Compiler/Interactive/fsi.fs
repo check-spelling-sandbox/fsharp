@@ -2305,7 +2305,7 @@ type internal FsiDynamicCompiler
                                     istate.tcState.TcEnvFromImpls.DisplayEnv,
                                     symbol,
                                     [],
-                                    ItemOccurence.Binding,
+                                    ItemOccurrence.Binding,
                                     v.DeclarationLocation
                                 )
 
@@ -2320,7 +2320,7 @@ type internal FsiDynamicCompiler
                                 istate.tcState.TcEnvFromImpls.DisplayEnv,
                                 symbol,
                                 [],
-                                ItemOccurence.Binding,
+                                ItemOccurrence.Binding,
                                 e.DeclarationLocation
                             )
 
