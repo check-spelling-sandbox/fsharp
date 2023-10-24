@@ -5563,7 +5563,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                 selectorData = (VSCOMPONENTSELECTORDATA)Marshal.PtrToStructure(ptr, typeof(VSCOMPONENTSELECTORDATA));
                 if (null == references.AddReferenceFromSelectorData(selectorData))
                 {
-                    //Skip further proccessing since a reference has to be added
+                    //Skip further processing since a reference has to be added
                     pResult[0] = VSADDCOMPRESULT.ADDCOMPRESULT_Failure;
                     return VSConstants.S_OK;
                 }
