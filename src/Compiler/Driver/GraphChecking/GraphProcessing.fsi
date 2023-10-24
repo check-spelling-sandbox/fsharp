@@ -8,7 +8,7 @@ type NodeInfo<'Item> =
     { Item: 'Item
       Deps: 'Item[]
       TransitiveDeps: 'Item[]
-      Dependants: 'Item[] }
+      Dependents: 'Item[] }
 
 /// An already processed node in the graph, with its result available
 type ProcessedNode<'Item, 'Result> =
