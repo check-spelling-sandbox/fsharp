@@ -630,7 +630,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Helper method to call a converter explicitely to convert to an enum type
+        /// Helper method to call a converter explicitly to convert to an enum type
         /// </summary>
         /// <typeparam name="T">THe enum to convert to</typeparam>
         /// <param name="value">The enum value to be converted to</param>
