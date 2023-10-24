@@ -8,7 +8,7 @@ type NodeInfo<'Item> =
         Item: 'Item
         Deps: 'Item[]
         TransitiveDeps: 'Item[]
-        Dependants: 'Item[]
+        Dependents: 'Item[]
     }
 
 type IncrementableInt(value: int) =
@@ -58,7 +58,7 @@ let processGraph<'Item, 'Result when 'Item: equality and 'Item: comparison>
                 Item = item
                 Deps = graph[item]
                 TransitiveDeps = transitiveDeps[item]
-                Dependants = dependents[item]
+                Dependents = dependents[item]
             }
 
         {
@@ -127,8 +127,8 @@ let processGraph<'Item, 'Result when 'Item: equality and 'Item: comparison>
         let singleRes = work getItemPublicNode info
         node.Result <- Some singleRes
 
-        let unblockedDependants =
-            node.Info.Dependants
+        let unblockedDependents =
+            node.Info.Dependents
             |> lookupMany
             // For every dependent, increment its number of processed dependencies,
             // and filter dependents which now have all dependencies processed (but didn't before).
@@ -137,7 +137,7 @@ let processGraph<'Item, 'Result when 'Item: equality and 'Item: comparison>
                 // Note: We cannot read 'dependent.ProcessedDepsCount' again to avoid returning the same item multiple times.
                 pdc = dependent.Info.Deps.Length)
 
-        unblockedDependants |> Array.iter queueNode
+        unblockedDependents |> Array.iter queueNode
         incrementProcessedNodesCount ()
 
     leaves |> Array.iter queueNode
