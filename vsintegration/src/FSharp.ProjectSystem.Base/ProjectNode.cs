@@ -4294,7 +4294,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                                     1, // 1 file
                                     files, // array of files
                                     flags, // no per file flags
-                                    attributes, // no per file file attributes
+                                    attributes, // no per file attributes
                                     out verdict,
                                     out moreInfo /* ignore additional results */);
 
