@@ -2748,7 +2748,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             // We can only perform save if the document is open
             if (docData == IntPtr.Zero)
             {
-                string errorMessage = string.Format(CultureInfo.CurrentCulture, SR.GetString(SR.CannotSaveFileNotOpeneInEditor, CultureInfo.CurrentUICulture), node.Url);
+                string errorMessage = string.Format(CultureInfo.CurrentCulture, SR.GetString(SR.CannotSaveFileNotOpenInEditor, CultureInfo.CurrentUICulture), node.Url);
                 throw new InvalidOperationException(errorMessage);
             }
 
