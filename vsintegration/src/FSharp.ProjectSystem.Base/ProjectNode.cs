@@ -245,7 +245,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         {
             this.buildResult = buildResult;
             this.projectInstance = projectInstance;
-            Debug.Assert(!this.IsSuccessful || this.ProjectInstance != null, "All successfull build results should have project istances");
+            Debug.Assert(!this.IsSuccessful || this.ProjectInstance != null, "All successfull build results should have project instances");
         }
         public BuildResult(BuildSubmission submission, ProjectInstance projectInstance) :
                 this(submission.BuildResult.OverallResult == BuildResultCode.Success ? MSBuildResult.Successful : MSBuildResult.Failed, projectInstance)
