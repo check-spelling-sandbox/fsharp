@@ -9899,7 +9899,7 @@ and TcMethodApplication
 
             let overriding =
                 match unrefinedItem with
-                | Item.MethodGroup(_, overridenMeths, _) -> overridenMeths |> List.map (fun minfo -> minfo, None)
+                | Item.MethodGroup(_, overriddenMeths, _) -> overriddenMeths |> List.map (fun minfo -> minfo, None)
                 | Item.Property(info = pinfos) ->
                     if result.Method.LogicalName.StartsWithOrdinal("set_") then
                         SettersOfPropInfos pinfos
