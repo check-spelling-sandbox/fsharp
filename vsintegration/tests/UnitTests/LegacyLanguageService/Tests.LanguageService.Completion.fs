@@ -6176,7 +6176,7 @@ let rec f l =
             list = [])
 
     [<Test>]
-    member this.``VariableIdentifier.MethodsInheritFomeBase``() = 
+    member this.``VariableIdentifier.MethodsInheritFromBase``() = 
         this.VerifyDotCompListContainAllAtStartOfMarker(
             fileContents = """
                 namespace MyNamespace1
