@@ -1268,15 +1268,15 @@ type MethodGroup( name: string, unsortedMethods: MethodGroupItem[] ) =
         unsortedMethods 
         // Methods with zero arguments show up here as taking a single argument of type 'unit'.  Patch them now to appear as having zero arguments.
         |> Array.map (fun meth -> 
-            let parms = meth.Parameters
-            if parms.Length = 1 && parms[0].CanonicalTypeTextForSorting="Microsoft.FSharp.Core.Unit" then 
+            let params = meth.Parameters
+            if params.Length = 1 && params[0].CanonicalTypeTextForSorting="Microsoft.FSharp.Core.Unit" then 
                 MethodGroupItem(meth.Description, meth.XmlDoc, meth.ReturnTypeText, [||], true, meth.HasParamArrayArg, meth.StaticParameters) 
             else 
                 meth)
         // Fix the order of methods, to be stable for unit testing.
         |> Array.sortBy (fun meth -> 
-            let parms = meth.Parameters
-            parms.Length, (parms |> Array.map (fun p -> p.CanonicalTypeTextForSorting)))
+            let params = meth.Parameters
+            params.Length, (params |> Array.map (fun p -> p.CanonicalTypeTextForSorting)))
 
     member _.MethodName = name
 
