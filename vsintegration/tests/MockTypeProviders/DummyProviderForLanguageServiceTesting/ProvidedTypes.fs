@@ -11676,7 +11676,7 @@ namespace ProviderImplementation.ProvidedTypes
         // manifest --> generate Assembly row
         // -------------------------------------------------------------------- 
 
-        and GetManifsetAsAssemblyRow cenv m = 
+        and GetManifestAsAssemblyRow cenv m = 
             UnsharedRow 
                 [|ULong m.AuxModuleHashAlgorithm
                   UShort (match m.Version with UNone -> 0us | USome v -> uint16 v.Major)
@@ -11701,7 +11701,7 @@ namespace ProviderImplementation.ProvidedTypes
                   (match m.Locale with UNone -> StringE 0 | USome x -> StringE (GetStringHeapIdx cenv x)) |]
 
         and GenManifestPass3 cenv m = 
-            let aidx = AddUnsharedRow cenv ILTableNames.Assembly (GetManifsetAsAssemblyRow cenv m)
+            let aidx = AddUnsharedRow cenv ILTableNames.Assembly (GetManifestAsAssemblyRow cenv m)
 #if EMIT_SECURITY_DECLS
             GenSecurityDeclsPass3 cenv (hds_Assembly, aidx) m.SecurityDecls.Entries
 #endif
