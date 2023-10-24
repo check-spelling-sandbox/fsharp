@@ -169,7 +169,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         /// Is an extensibility object executing an automation function.
         /// </devdoc>
         /// <param name="serviceProvider">The service provider.</param>
-        /// <returns>true if the extensiblity object is executing an automation function.</returns>
+        /// <returns>true if the extensibility object is executing an automation function.</returns>
         public static bool IsInAutomationFunction(IServiceProvider serviceProvider)
         {
             if (serviceProvider == null)
