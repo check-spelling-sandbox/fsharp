@@ -274,7 +274,7 @@ module SomeRandomOperatorConstraints = begin
 end
 
 (* This test is funky because the type constraint on the variable associated with parameter 'x' *)
-(* invloves the type variable from the enclosing class.  This exposed a bug with fixing up type *)
+(* involves the type variable from the enclosing class.  This exposed a bug with fixing up type *)
 (* constraints correctly. *)
 module NestedGenericMethodWithSubtypeConstraint = begin
     type I<'a> =
