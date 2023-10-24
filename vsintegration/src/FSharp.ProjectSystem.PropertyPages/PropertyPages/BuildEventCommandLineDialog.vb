@@ -236,7 +236,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         Private m_serviceProvider As IServiceProvider
         Private m_Page As PropPageUserControlBase
 
-        Private m_szIntialFormSize As Size
+        Private m_szInitialFormSize As Size
         Private m_helpTopic As String
 
         Public Function SetFormTitleText(ByVal TitleText As String) As Boolean
