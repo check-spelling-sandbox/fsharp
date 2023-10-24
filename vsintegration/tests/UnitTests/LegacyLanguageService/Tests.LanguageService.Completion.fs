@@ -6774,7 +6774,7 @@ let rec f l =
             list = ["P"; "Q"]) 
 
     [<Test>]
-    member this.``Regression1067.ClassUsingGeniricTypeAsAttribute``() =
+    member this.``Regression1067.ClassUsingGenericTypeAsAttribute``() =
         this.VerifyDotCompListContainAllAtStartOfMarker(
             fileContents = """
                 type GT<'a> =
