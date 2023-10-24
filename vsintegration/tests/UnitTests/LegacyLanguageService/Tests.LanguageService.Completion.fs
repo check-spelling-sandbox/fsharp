@@ -4270,7 +4270,7 @@ let x = query { for bbbb in abbbbc(*D0*) do
         gpatcc.AssertExactly(0,0)
 
     // When the module isn't empty, we should show completion for the module
-    // (and not type-inferrence based completion on strings - therefore test for 'Chars')
+    // (and not type-inference based completion on strings - therefore test for 'Chars')
     
     [<Test>]
     member public this.``Obsolete.TopLevelModule``() =
