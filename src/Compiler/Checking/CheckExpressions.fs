@@ -11977,7 +11977,7 @@ and TcIncrementalLetRecGeneralization cenv scopem
         // Some of the bindings may now have been marked as 'generalizable' (which means they now transition
         // from PreGeneralization --> PostGeneralization, since we won't get any more information on
         // these bindings by processing later bindings). But this doesn't mean we
-        // actually generalize all the individual type variables occuring in these bindings - for example, some
+        // actually generalize all the individual type variables occurring in these bindings - for example, some
         // type variables may be free in the environment, and some definitions
         // may be value definitions which can't be generalized, e.g.
         //   let rec f x = g x
