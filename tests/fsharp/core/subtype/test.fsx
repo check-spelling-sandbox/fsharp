@@ -1766,7 +1766,7 @@ module GenericPropertyConstraintSolvedByRecord =
 
 /// In this case, the presence of the Method(obj) overload meant overload resolution was being applied and resolving to that
 /// overload, even before the full signature of the trait constraint was known.
-module MethodOverloadingForTraitConstraintsIsNotDeterminedUntilSignatureIsKnnown =
+module MethodOverloadingForTraitConstraintsIsNotDeterminedUntilSignatureIsKnown =
     type X =
         static member Method (a: obj) = 1
         static member Method (a: int) = 2
