@@ -1966,7 +1966,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
         ''' <summary>
         ''' Restore the initial value of a property into the property's control (or user-persisted store).
-        '''   This is done after a non-immmediate (child) property page is canceled in order to restore
+        '''   This is done after a non-immediate (child) property page is canceled in order to restore
         '''   the page's original values into the control.
         ''' </summary>
         ''' <remarks></remarks>
