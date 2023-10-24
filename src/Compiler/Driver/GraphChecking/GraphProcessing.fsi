@@ -17,7 +17,7 @@ type ProcessedNode<'Item, 'Result> =
 
 /// <summary>
 /// A generic method to generate results for a graph of work items in parallel.
-/// Processes leaves first, and after each node has been processed, schedules any now unblocked dependants.
+/// Processes leaves first, and after each node has been processed, schedules any now unblocked dependents.
 /// Returns a list of results, one per item.
 /// Uses the Thread Pool to schedule work.
 /// </summary>
