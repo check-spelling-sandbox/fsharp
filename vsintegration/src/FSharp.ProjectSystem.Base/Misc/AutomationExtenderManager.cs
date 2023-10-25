@@ -315,7 +315,7 @@ namespace Microsoft.VisualStudio.Editors.PropertyPages
 
             if (catID != null && catID.Length > 0) {
                 try {
-                    // is this a vaild catID string?
+                    // is this a valid catID string?
                     Guid g = new Guid(catID);
                 }
                 catch (FormatException) {
