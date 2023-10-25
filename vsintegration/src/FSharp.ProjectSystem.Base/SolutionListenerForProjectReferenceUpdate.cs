@@ -98,7 +98,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         {
             List<ProjectReferenceNode> projectReferences = this.GetProjectReferencesContainingThisProject(realHierarchy);
 
-            // Refersh the project reference node. That should trigger the drawing of the normal project reference icon.
+            // Refresh the project reference node. That should trigger the drawing of the normal project reference icon.
             foreach (ProjectReferenceNode projectReference in projectReferences)
             {
                 projectReference.CanRemoveReference = true;
