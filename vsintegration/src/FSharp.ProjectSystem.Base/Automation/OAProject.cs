@@ -503,7 +503,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem.Automation
                         // Get the IVsHierarchy for the project.
                         IVsHierarchy prjHierarchy = project.InteropSafeIVsHierarchy;
 
-                        // Now get the soulution.
+                        // Now get the solution.
                         IVsSolution solution = this.project.Site.GetService(typeof(SVsSolution)) as IVsSolution;
                         // Verify that we have both solution and hierarchy.
                         if ((null == prjHierarchy) || (null == solution))
