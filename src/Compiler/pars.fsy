@@ -3695,7 +3695,7 @@ parenPatternBody:
 
 /* This duplicates out 'patterns' in order to give type annotations */
 /* the desired precedence w.r.t. patterns, tuple patterns in particular. */
-/* Duplication requried to minimize the disturbance to the grammar, */
+/* Duplication required to minimize the disturbance to the grammar, */
 /* in particular the expected property that "pat" parses the same as */
 /* "(pat)"!  Here are some examples: */
 /*    a, b                  parses as (a, b) */
