@@ -1985,7 +1985,7 @@ Integrate dotnet/fsharp from 48f932cf8 to 085985140. Notable changes include:
 ### 0.0.4-alpha -
 
 * Added documentation of file system API
-* Reporte errors correctly from ParseAndCheckProject
+* Report errors correctly from ParseAndCheckProject
 
 ### 0.0.3-alpha -
 
