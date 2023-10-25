@@ -971,7 +971,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Retrives the configuration and the platform using the IVsSolutionBuildManager2 interface.
+        /// Retrieves the configuration and the platform using the IVsSolutionBuildManager2 interface.
         /// </summary>
         /// <param name="serviceProvider">A service provider.</param>
         /// <param name="hierarchy">The hierarchy whose configuration is requested.</param>
@@ -1000,7 +1000,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Retrives the configuration and the platform using the IVsSolutionBuildManager2 interface.
+        /// Retrieves the configuration and the platform using the IVsSolutionBuildManager2 interface.
         /// </summary>
         /// <param name="serviceProvider">A service provider.</param>
         /// <param name="hierarchy">The hierarchy whose configuration is requested.</param>

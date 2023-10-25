@@ -1338,7 +1338,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             }
 
             if (this.evaluatedProject == null)
-               throw new Exception("Failed to retrive properties");
+               throw new Exception("Failed to retrieve properties");
 
             // return property asked for
             return this.evaluatedProject.GetProperty(propertyName);
@@ -1362,7 +1362,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                 throw new ArgumentException(SR.GetString(SR.InvalidParameter, CultureInfo.CurrentUICulture), "pages");
             }
 
-            // Retrive the list of guids from hierarchy properties.
+            // Retrieve the list of guids from hierarchy properties.
             // Because a flavor could modify that list we must make sure we are calling the outer most implementation of IVsHierarchy
             string guidsList = String.Empty;
             IVsHierarchy hierarchy = project.InteropSafeIVsHierarchy;
