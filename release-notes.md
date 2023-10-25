@@ -1928,7 +1928,7 @@ Integrate dotnet/fsharp from 48f932cf8 to 085985140. Notable changes include:
 ### 0.0.16 -
 
 * Make FSharpEntity.BaseType return an option
-* FsiSesion got a new "EvalScript" method which allows to evaluate .fsx files
+* FsiSession got a new "EvalScript" method which allows to evaluate .fsx files
 
 ### 0.0.15 -
 
