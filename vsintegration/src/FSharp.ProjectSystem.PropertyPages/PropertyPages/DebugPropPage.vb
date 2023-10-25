@@ -375,7 +375,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                 If action = VSLangProj.prjStartAction.prjStartActionProject Then
                     EnableControl(UseVSHostingProcess, True)
                 Else
-                    ' We don't want to enable this unless the the startup action is to start the project
+                    ' We don't want to enable this unless the startup action is to start the project
                     UseVSHostingProcess.Enabled = False
                 End If
             Finally
@@ -412,7 +412,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
             If _enabled AndAlso StartActionGetValue() = VSLangProj.prjStartAction.prjStartActionProject Then
                 EnableControl(Me.UseVSHostingProcess, True)
             Else
-                ' We don't want to enable this unless the the startup action is to start the project
+                ' We don't want to enable this unless the startup action is to start the project
                 Me.UseVSHostingProcess.Enabled = False
             End If
         End Sub
@@ -476,7 +476,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                 If StartActionGetValue() = VSLangProj.prjStartAction.prjStartActionProject Then
                     EnableControl(Me.UseVSHostingProcess, True)
                 Else
-                    ' We don't want to enable this unless the the startup action is to start the project
+                    ' We don't want to enable this unless the startup action is to start the project
                     Me.UseVSHostingProcess.Enabled = False
                 End If
 
