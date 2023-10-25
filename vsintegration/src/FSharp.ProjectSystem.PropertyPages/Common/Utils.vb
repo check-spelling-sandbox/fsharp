@@ -224,7 +224,7 @@ Namespace Microsoft.VisualStudio.Editors.Common
 
 
         ''' <summary>
-        ''' Attempts to create a string represention of an object, for debug purposes.  Under retail,
+        ''' Attempts to create a string representation of an object, for debug purposes.  Under retail,
         '''   returns an empty string.
         ''' </summary>
         ''' <param name="Value">The value to turn into a displayable string.</param>
