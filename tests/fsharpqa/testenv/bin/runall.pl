@@ -656,7 +656,7 @@ sub get_clver
 		if( $target_arch == -1) {
 			# target architecture is not set; try to find it out from the cl.exe
 			$vc_info{"targetarch"} = $5;
-			# get the arch that the compiler is targetting
+			# get the arch that the compiler is targeting
 			if ( $vc_info{"targetarch"} =~ /x86/i ) {
 				$vc_info{"targetarch"} = "x86";
 			}
@@ -2439,7 +2439,7 @@ sub get_switches
     $ttags = '__ra_alltag__' unless $ttags;
     $ltags = '__ra_alltag__' unless $ltags;
 
-    # set TARGET_MANAGED env variable if we're targetting the CLR
+    # set TARGET_MANAGED env variable if we're targeting the CLR
     $ENV{TARGET_IS_MANAGED} = 0;
     $ENV{TARGET_IS_MANAGED} = 1 if (($target eq "cee") or ($target =~ /clr$/) or ($target eq "clrpure"));
 
