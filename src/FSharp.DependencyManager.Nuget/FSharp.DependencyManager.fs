@@ -260,7 +260,7 @@ type ResolveDependenciesResult
         roots: string seq
     ) =
 
-    /// Succeded?
+    /// Succeeded?
     member _.Success = success
 
     /// The resolution output log
