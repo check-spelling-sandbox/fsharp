@@ -543,7 +543,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Returns true if thename that can represent a path, absolute or relative, or a file name contains invalid filename characters.
+        /// Returns true if the name that can represent a path, absolute or relative, or a file name contains invalid filename characters.
         /// </summary>
         /// <param name="name">File name</param>
         /// <returns>true if file name is invalid</returns>
