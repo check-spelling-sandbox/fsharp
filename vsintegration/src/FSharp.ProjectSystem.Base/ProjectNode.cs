@@ -2738,7 +2738,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             try
             {
                 // Get the current project hierarchy, project item, and selection container for the current selection
-                // If the selection spans multiple hierachies, hierarchyPtr is Zero
+                // If the selection spans multiple hierarchies, hierarchyPtr is Zero
                 uint itemid;
                 IVsMultiItemSelect multiItemSelect = null;
                 ErrorHandler.ThrowOnFailure(monitorSelection.GetCurrentSelection(out hierarchyPtr, out itemid, out multiItemSelect, out selectionContainer));
