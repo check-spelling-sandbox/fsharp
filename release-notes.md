@@ -665,7 +665,7 @@ In addition to the F# 4.7 feature set, this release includes support for the fol
 * Support for [`nameof` expressions](https://github.com/fsharp/fslang-design/blob/master/preview/FS-1003-nameof-operator.md)
 * Support for opening of static classes
 
-You can enable this by seeting `<LangVersion>preview</LangVersion>` in your project file.
+You can enable this by setting `<LangVersion>preview</LangVersion>` in your project file.
 
 This release also contains the following bug fixes and improvements to the F# compiler:
 
