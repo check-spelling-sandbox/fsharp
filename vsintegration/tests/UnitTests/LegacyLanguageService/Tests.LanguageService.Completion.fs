@@ -39,7 +39,7 @@ type UsingMSBuild() as this  =
         file
 
     let DoWithAutoCompleteUsingExtraRefs refs otherFlags coffeeBreak fileKind reason (code : string list) marker f  =        
-        // Up to 2 untyped parse operations are OK: we do an initial parse to provide breakpoint valdiation etc. 
+        // Up to 2 untyped parse operations are OK: we do an initial parse to provide breakpoint validation etc. 
         // This might be before the before the background builder is ready to process the foreground typecheck.
         // In this case the background builder calls us back when its ready, and we then request a foreground typecheck 
         let file = createFile code fileKind refs otherFlags
