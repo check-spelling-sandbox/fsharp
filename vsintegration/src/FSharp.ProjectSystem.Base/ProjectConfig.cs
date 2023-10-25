@@ -856,7 +856,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Implementation of the IVsSpecifyProjectDesignerPages. It will retun the pages that are configuration dependent.
+        /// Implementation of the IVsSpecifyProjectDesignerPages. It will return the pages that are configuration dependent.
         /// </summary>
         /// <param name="pages">The pages to return.</param>
         /// <returns>VSConstants.S_OK</returns>        
