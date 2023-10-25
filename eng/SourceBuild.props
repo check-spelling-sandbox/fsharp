@@ -18,7 +18,7 @@
   </Target>
 
   <!--
-    The build script bootstraps some tooling for the build.  Since the inner build is triggerred via msbuild,
+    The build script bootstraps some tooling for the build.  Since the inner build is triggered via msbuild,
     trigger the bootstrapping for the inner build.
   -->
   <Target Name="BuildBootstrap"
