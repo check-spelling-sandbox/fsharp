@@ -407,7 +407,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
 
             Debug.Assert(!element1.IsVirtual || !element2.IsVirtual, "Cannot compare virtual nodes");
 
-            // Cannot compare vitual items.
+            // Cannot compare virtual items.
             if (element1.IsVirtual || element2.IsVirtual)
             {
                 return false;
