@@ -2808,7 +2808,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Recursevily walks the hierarchy nodes and redraws the state icons
+        /// Recursively walks the hierarchy nodes and redraws the state icons
         /// </summary>
         public override void UpdateSccStateIcons()
         {
@@ -6328,7 +6328,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         }
 
         /// <summary>
-        /// Recusively parses the tree and closes all nodes, including "node".
+        /// Recursively parses the tree and closes all nodes, including "node".
         /// </summary>
         /// <param name="node">The subtree to close.</param>
         private static void CloseAllNodes(HierarchyNode node)
@@ -6341,7 +6341,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
             node.Close();
         }
         /// <summary>
-        /// Recusively parses the tree and closes all nodes below "node", but don't close "node".
+        /// Recursively parses the tree and closes all nodes below "node", but don't close "node".
         /// </summary>
         /// <param name="node">The subtree to close.</param>
         private static void CloseAllSubNodes(HierarchyNode node)
