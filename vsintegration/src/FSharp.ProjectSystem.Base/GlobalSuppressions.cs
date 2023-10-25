@@ -166,7 +166,7 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "Microsoft.VisualStudio.Package.ProjectOptions.#EmitManifest", MessageId = "")]
 [assembly: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "Microsoft.VisualStudio.Package.ProjectOptions.#EncodeOutputInUTF8", MessageId = "")]
 [assembly: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "Microsoft.VisualStudio.Package.ProjectOptions.#FileAlignment", MessageId = "")]
-[assembly: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "Microsoft.VisualStudio.Package.ProjectOptions.#FullyQualifiyPaths", MessageId = "")]
+[assembly: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "Microsoft.VisualStudio.Package.ProjectOptions.#FullyQualifyPaths", MessageId = "")]
 [assembly: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "Microsoft.VisualStudio.Package.ProjectOptions.#HeuristicReferenceResolution", MessageId = "")]
 [assembly: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "Microsoft.VisualStudio.Package.ProjectOptions.#IncrementalCompile", MessageId = "")]
 [assembly: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "Microsoft.VisualStudio.Package.ProjectOptions.#ModuleKind", MessageId = "")]
