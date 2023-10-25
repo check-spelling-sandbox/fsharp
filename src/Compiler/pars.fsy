@@ -1408,7 +1408,7 @@ namedModuleDefnBlock:
          // The second is a module abbreviation, the first a module containing a single expression.
          // The resolution is in favour of the module abbreviation, i.e. anything of the form
          //    module M2 = ID.ID.ID.ID
-         // will be taken as a module abbreviation, regardles of the identifiers themselves.
+         // will be taken as a module abbreviation, regardless of the identifiers themselves.
          //
          // This is similar to the ambiguity between
          //    type X = int
