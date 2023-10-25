@@ -84,7 +84,7 @@ module internal Utils =
     let getTempFilePathChangeExt tmp ext =
         Path.Combine(getTempPath(), Path.ChangeExtension(tmp, ext))
 
-    // This behaves slightly differently on Mono versions, 'null' is printed somethimes, 'None' other times
+    // This behaves slightly differently on Mono versions, 'null' is printed sometimes, 'None' other times
     // Presumably this is very small differences in Mono reflection causing F# printing to change behaviour
     // For now just disabling this test. See https://github.com/fsharp/FSharp.Compiler.Service/pull/766
     let filterHack l =
