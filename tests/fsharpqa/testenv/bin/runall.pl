@@ -373,7 +373,7 @@ sub verify_unlink
 	my $delete = "del /f";
 	$delete = "del" if $isWin9x; # VCQA:6953 del /f isn't available on Win9x
     foreach (@_) {
-		# Try to delete - call sytem DEL to fix unicode filename issues.
+		# Try to delete - call system DEL to fix unicode filename issues.
 	system "DEL \"$_\" > nul 2> nul";
         if (-e $_) {
             # Make file read/writeable
