@@ -15,7 +15,7 @@ let ``Fixes FS0039 for mistyped record field names`` () =
         """
 type Song = { Title : string }
 
-let song = { Titel = "Jigsaw Falling Into Place" }
+let song = { Title = "Jigsaw Falling Into Place" }
 """
 
     let expected =
