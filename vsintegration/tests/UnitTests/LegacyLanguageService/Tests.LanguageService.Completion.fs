@@ -4769,7 +4769,7 @@ let x = query { for bbbb in abbbbc(*D0*) do
 
     // Bunch of crud in empty list. This test asserts that unwanted things don't exist at the top level.
     [<Test>]
-    member public this.``Editor.WhitoutContext.Bug986``() =     
+    member public this.``Editor.WithoutContext.Bug986``() =     
         let code = ["(*mark*)"]
         let (_,_, file) = this.CreateSingleFileProject(code)
 
@@ -6711,7 +6711,7 @@ let rec f l =
             marker = "(*MarkerModule*)")
 
     [<Test>]
-    member this.``Identifier.WithouDef``() = 
+    member this.``Identifier.WithoutDef``() = 
         this.VerifyDotCompListIsEmptyAtStartOfMarker(
             fileContents = """ abcd(*MarkerUndefinedIdentifier*)  """,
             marker = "(*MarkerUndefinedIdentifier*)") 
