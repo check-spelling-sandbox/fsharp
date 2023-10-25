@@ -475,8 +475,8 @@ let v = c.InstanceProperty
 
 System.Console.WriteLine("777") // do a top-level action
 
-let functionWithSubmsumption(x:obj)  =  x :?> string
-//let functionWithCoercion(x:string)  =  (x :> obj) :?> string |> functionWithSubmsumption |> functionWithSubmsumption
+let functionWithSubsumption(x:obj)  =  x :?> string
+//let functionWithCoercion(x:string)  =  (x :> obj) :?> string |> functionWithSubsumption |> functionWithSubsumption
 
 type MultiArgMethods(c:int,d:int) =
    member x.Method(a:int, b : int) = 1
@@ -793,7 +793,7 @@ let ``Test Unoptimized Declarations Project1`` () =
          "let c = new ClassWithEventsAndProperties(()) @ (97,8--97,38)";
          "let v = M.c ().get_InstanceProperty(()) @ (98,8--98,26)";
          "do Console.WriteLine (\"777\")";
-         "let functionWithSubmsumption(x) = IntrinsicFunctions.UnboxGeneric<Microsoft.FSharp.Core.string> (x) @ (102,40--102,52)";
+         "let functionWithSubsumption(x) = IntrinsicFunctions.UnboxGeneric<Microsoft.FSharp.Core.string> (x) @ (102,40--102,52)";
          "type MultiArgMethods";
          "member .ctor(c,d) = (new Object(); ()) @ (105,5--105,20)";
          "member Method(x) (a,b) = 1 @ (106,37--106,38)";
@@ -928,7 +928,7 @@ let ``Test Optimized Declarations Project1`` () =
          "let c = new ClassWithEventsAndProperties(()) @ (97,8--97,38)";
          "let v = M.c ().get_InstanceProperty(()) @ (98,8--98,26)";
          "do Console.WriteLine (\"777\")";
-         "let functionWithSubmsumption(x) = IntrinsicFunctions.UnboxGeneric<Microsoft.FSharp.Core.string> (x) @ (102,40--102,52)";
+         "let functionWithSubsumption(x) = IntrinsicFunctions.UnboxGeneric<Microsoft.FSharp.Core.string> (x) @ (102,40--102,52)";
          "type MultiArgMethods";
          "member .ctor(c,d) = (new Object(); ()) @ (105,5--105,20)";
          "member Method(x) (a,b) = 1 @ (106,37--106,38)";
