@@ -490,7 +490,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
 
         /// <summary>
         /// Creates an object derived from NodeProperties that will be used to expose properties
-        /// spacific for this object to the property browser.
+        /// specific for this object to the property browser.
         /// </summary>
         /// <returns></returns>
         public virtual NodeProperties CreatePropertiesObject()
