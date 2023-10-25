@@ -1233,7 +1233,7 @@ let noFrameworkFlag isFsc tcConfigB =
         tagNone,
         OptionUnit(fun () ->
             // When the compilation is not fsi do nothing.
-            // It is just not a usefull option when running fsi on the coreclr or the desktop framework really.
+            // It is just not a useful option when running fsi on the coreclr or the desktop framework really.
             if isFsc then
                 tcConfigB.implicitlyReferenceDotNetAssemblies <- false
                 tcConfigB.implicitlyResolveAssemblies <- false),
