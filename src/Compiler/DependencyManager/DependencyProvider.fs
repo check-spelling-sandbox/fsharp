@@ -418,7 +418,7 @@ type ReflectionDependencyManagerProvider
                 rid,
                 timeout
             ) : IResolveDependenciesResult =
-            // The ResolveDependencies method, has two signatures, the original signaature in the variable resolveDeps and the updated signature resolveDepsEx
+            // The ResolveDependencies method, has two signatures, the original signature in the variable resolveDeps and the updated signature resolveDepsEx
             // the resolve method can return values in two different tuples:
             //     (bool * string list * string list * string list)
             //     (bool * string list * string list)
