@@ -1971,7 +1971,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
                     // Compute the file name
                     // We try to solve two problems here. When input comes from a wizzard in case of zipped based projects 
                     // the parameters are different.
-                    // In that case the filename has the new filename in a temporay path.
+                    // In that case the filename has the new filename in a temporary path.
 
                     // First get the extension from the template.
                     // Then get the filename from the name.
