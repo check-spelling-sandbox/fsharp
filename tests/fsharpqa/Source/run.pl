@@ -478,7 +478,7 @@ sub RunCommand {
   @CommandOutput = <COMMAND>;
   close COMMAND;
   my $result = $?;
-#  close STDERR; open STDERR, ">&SAVEERR"; #resore stderr
+#  close STDERR; open STDERR, ">&SAVEERR"; #restore stderr
 
   print(join("\n", @CommandOutput)) if ($dumpOutput == 1);
 
