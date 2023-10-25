@@ -734,7 +734,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                         End If
                     End If
                 Else
-                    '// Indeterminate. Leave all the radio buttons unchecled
+                    '// Indeterminate. Leave all the radio buttons unchecked
                     bIndeterminateState = True
                 End If
 
