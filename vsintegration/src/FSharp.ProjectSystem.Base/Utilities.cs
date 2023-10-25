@@ -975,7 +975,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         /// </summary>
         /// <param name="serviceProvider">A service provider.</param>
         /// <param name="hierarchy">The hierarchy whose configuration is requested.</param>
-        /// <returns>true if successfull.</returns>
+        /// <returns>true if successful.</returns>
         public static bool TryGetActiveConfigurationAndPlatform(System.IServiceProvider serviceProvider, Guid projectId, out ConfigCanonicalName configCanonicalName)
         {
             if (serviceProvider == null)
@@ -1004,7 +1004,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem
         /// </summary>
         /// <param name="serviceProvider">A service provider.</param>
         /// <param name="hierarchy">The hierarchy whose configuration is requested.</param>
-        /// <returns>true if successfull.</returns>
+        /// <returns>true if successful.</returns>
         public static bool TryGetConfigurationAndPlatform(IVsCfg config, out ConfigCanonicalName configCanonicalName)
         {
 
