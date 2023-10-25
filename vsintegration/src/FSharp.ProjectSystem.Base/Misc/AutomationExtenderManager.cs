@@ -712,7 +712,7 @@ namespace Microsoft.VisualStudio.Editors.PropertyPages
             //   event through the ExtenderItem property descriptor subclass
             //   need to have their request forwarded to the wrapped property,
             //   which is where the change will actually take place and from
-            //   wheret the ValueChanged event will actually be fired.  So we override
+            //   where the ValueChanged event will actually be fired.  So we override
             //   AddValueChanged and RemoveValueChanged.  Note that
             //   like SetValue, we pass in the extender as the component, ignoring
             //   the component passed in.  Otherwise the event would not fire properly.
