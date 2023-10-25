@@ -60,9 +60,9 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
         Friend WithEvents chkOptimizeCode As System.Windows.Forms.CheckBox
         Friend WithEvents chkTailcalls As System.Windows.Forms.CheckBox
         Friend WithEvents lblWarningLevel As System.Windows.Forms.Label
-        Friend WithEvents lblSupressWarnings As System.Windows.Forms.Label
+        Friend WithEvents lblSuppressWarnings As System.Windows.Forms.Label
         Friend WithEvents cboWarningLevel As System.Windows.Forms.ComboBox
-        Friend WithEvents txtSupressWarnings As System.Windows.Forms.TextBox
+        Friend WithEvents txtSuppressWarnings As System.Windows.Forms.TextBox
         Friend WithEvents rbWarningNone As System.Windows.Forms.RadioButton
         Friend WithEvents rbWarningSpecific As System.Windows.Forms.RadioButton
         Friend WithEvents rbWarningAll As System.Windows.Forms.RadioButton
@@ -112,8 +112,8 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
             Me.chkTailcalls = New System.Windows.Forms.CheckBox()
             Me.lblWarningLevel = New System.Windows.Forms.Label()
             Me.cboWarningLevel = New System.Windows.Forms.ComboBox()
-            Me.lblSupressWarnings = New System.Windows.Forms.Label()
-            Me.txtSupressWarnings = New System.Windows.Forms.TextBox()
+            Me.lblSuppressWarnings = New System.Windows.Forms.Label()
+            Me.txtSuppressWarnings = New System.Windows.Forms.TextBox()
             Me.rbWarningNone = New System.Windows.Forms.RadioButton()
             Me.rbWarningSpecific = New System.Windows.Forms.RadioButton()
             Me.rbWarningAll = New System.Windows.Forms.RadioButton()
@@ -205,15 +205,15 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
             Me.cboWarningLevel.Items.AddRange(New Object() {resources.GetString("cboWarningLevel.Items"), resources.GetString("cboWarningLevel.Items1"), resources.GetString("cboWarningLevel.Items2"), resources.GetString("cboWarningLevel.Items3"), resources.GetString("cboWarningLevel.Items4"), resources.GetString("cboWarningLevel.Items5")})
             Me.cboWarningLevel.Name = "cboWarningLevel"
             '
-            'lblSupressWarnings
+            'lblSuppressWarnings
             '
-            resources.ApplyResources(Me.lblSupressWarnings, "lblSupressWarnings")
-            Me.lblSupressWarnings.Name = "lblSupressWarnings"
+            resources.ApplyResources(Me.lblSuppressWarnings, "lblSuppressWarnings")
+            Me.lblSuppressWarnings.Name = "lblSuppressWarnings"
             '
-            'txtSupressWarnings
+            'txtSuppressWarnings
             '
-            resources.ApplyResources(Me.txtSupressWarnings, "txtSupressWarnings")
-            Me.txtSupressWarnings.Name = "txtSupressWarnings"
+            resources.ApplyResources(Me.txtSuppressWarnings, "txtSuppressWarnings")
+            Me.txtSuppressWarnings.Name = "txtSuppressWarnings"
             '
             'rbWarningNone
             '
@@ -279,8 +279,8 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
             Me.overarchingTableLayoutPanel.Controls.Add(Me.rbWarningSpecific, 0, 15)
             Me.overarchingTableLayoutPanel.Controls.Add(Me.txtSpecificWarnings, 1, 15)
             Me.overarchingTableLayoutPanel.Controls.Add(Me.rbWarningNone, 0, 14)
-            Me.overarchingTableLayoutPanel.Controls.Add(Me.txtSupressWarnings, 1, 12)
-            Me.overarchingTableLayoutPanel.Controls.Add(Me.lblSupressWarnings, 0, 12)
+            Me.overarchingTableLayoutPanel.Controls.Add(Me.txtSuppressWarnings, 1, 12)
+            Me.overarchingTableLayoutPanel.Controls.Add(Me.lblSuppressWarnings, 0, 12)
             Me.overarchingTableLayoutPanel.Controls.Add(Me.cboWarningLevel, 1, 11)
             Me.overarchingTableLayoutPanel.Controls.Add(Me.lblWarningLevel, 0, 11)
             Me.overarchingTableLayoutPanel.Controls.Add(Me.cboPlatformTarget, 1, 4)
@@ -460,7 +460,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
                      New SingleConfigPropertyControlData(SingleConfigPropertyControlData.Configs.Release,
                         VsProjPropId.VBPROJPROPID_AllowUnsafeBlocks, "Tailcalls", Me.chkTailcalls),
                      New PropertyControlData(VsProjPropId.VBPROJPROPID_WarningLevel, "WarningLevel", Me.cboWarningLevel, AddressOf WarningLevelSet, AddressOf WarningLevelGet, ControlDataFlags.None, New Control() {lblWarningLevel}),
-                     New PropertyControlData(VsProjPropId2.VBPROJPROPID_NoWarn, "NoWarn", Me.txtSupressWarnings, New Control() {Me.lblSupressWarnings}),
+                     New PropertyControlData(VsProjPropId2.VBPROJPROPID_NoWarn, "NoWarn", Me.txtSuppressWarnings, New Control() {Me.lblSuppressWarnings}),
                      New PropertyControlData(VsProjPropId.VBPROJPROPID_TreatWarningsAsErrors, "TreatWarningsAsErrors", Me.rbWarningAll, AddressOf TreatWarningsInit, AddressOf TreatWarningsGet),
                      New PropertyControlData(VsProjPropId80.VBPROJPROPID_TreatSpecificWarningsAsErrors, "TreatSpecificWarningsAsErrors", Me.txtSpecificWarnings, AddressOf TreatSpecificWarningsInit, AddressOf TreatSpecificWarningsGet),
                      New SingleConfigPropertyControlData(SingleConfigPropertyControlData.Configs.Release,
