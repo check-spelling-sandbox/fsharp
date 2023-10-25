@@ -665,7 +665,7 @@ try {
     # verify nupkgs have access to the source code
     $nupkgtestFailed = $false
     if ($testpack) {
-        # Fetch soucelink test
+        # Fetch sourcelink test
         $dotnetPath = InitializeDotNetCli
         $dotnetExe = Join-Path $dotnetPath "dotnet.exe"
         $dotnettoolsPath = Join-Path $RepoRoot "\.tools\"
