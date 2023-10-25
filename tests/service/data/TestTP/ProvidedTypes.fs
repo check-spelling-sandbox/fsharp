@@ -10535,7 +10535,7 @@ namespace ProviderImplementation.ProvidedTypes
         // -------------------------------------------------------------------- 
         // ILMethodRef --> ILMethodDef.  
         // 
-        // Only successfuly converts ILMethodRef's referring to 
+        // Only successfully converts ILMethodRef's referring to 
         // methods in the module being emitted.
         // -------------------------------------------------------------------- 
 
