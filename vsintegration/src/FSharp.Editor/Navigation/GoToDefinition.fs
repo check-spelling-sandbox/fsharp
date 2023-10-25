@@ -390,7 +390,7 @@ type internal GoToDefinition(metadataAsSource: FSharpMetadataAsSourceService) =
                             return ValueSome(FSharpGoToDefinitionResult.ExternalAssembly(targetSymbolUse, metadataReferences), idRange)
                         else
                         // if goto definition is called as we are already at the declaration location of a symbol in
-                        // either a signature or an implementation file then we jump to it's respective postion in thethe
+                        // either a signature or an implementation file then we jump to its respective postion in thethe
                         if
                             lexerSymbol.Range = targetRange
                         then
