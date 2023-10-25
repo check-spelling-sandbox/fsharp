@@ -105,7 +105,7 @@ type IResolveDependenciesResult =
     /// The resolution error log (* process stderror *)
     abstract StdError: string[]
 
-    /// The resolution paths - the full paths to selcted resolved dll's.
+    /// The resolution paths - the full paths to selected resolved dll's.
     /// In scripts this is equivalent to #r @"c:\somepath\to\packages\ResolvedPackage\1.1.1\lib\netstandard2.0\ResolvedAssembly.dll"
     abstract Resolutions: seq<string>
 
