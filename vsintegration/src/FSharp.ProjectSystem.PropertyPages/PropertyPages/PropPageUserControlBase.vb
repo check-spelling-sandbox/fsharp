@@ -550,7 +550,7 @@ Namespace Microsoft.VisualStudio.Editors.PropertyPages
 
         ''' <summary>
         ''' Causes listening to property changes to be resumed after an equal number of
-        '''   SuspendPropertyChangeListening/ResumeropertyChangeListening pairs have been made
+        '''   SuspendPropertyChangeListening/ResumePropertyChangeListening pairs have been made
         ''' </summary>
         ''' <remarks></remarks>
         Public Sub ResumePropertyChangeListening(ByVal DispId As Integer)

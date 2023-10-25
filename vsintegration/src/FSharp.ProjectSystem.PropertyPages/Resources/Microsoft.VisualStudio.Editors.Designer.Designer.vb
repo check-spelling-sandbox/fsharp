@@ -3962,9 +3962,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to The resource item(s) {0} cannot be saved correctly.  The item(s) will be discarded..
         '''</summary>
-        Friend Shared ReadOnly Property RSE_Err_CantSaveResouce_1Arg() As String
+        Friend Shared ReadOnly Property RSE_Err_CantSaveResourceDiscard_1Arg() As String
             Get
-                Return ResourceManager.GetString("RSE_Err_CantSaveResouce_1Arg", resourceCulture)
+                Return ResourceManager.GetString("RSE_Err_CantSaveResourceDiscard_1Arg", resourceCulture)
             End Get
         End Property
         

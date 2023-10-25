@@ -510,7 +510,7 @@ End Namespace
 '        Friend Const RSE_Err_CantAddUnsupportedResource_1Arg As String = "RSE_Err_CantAddUnsupportedResource_1Arg"
 '        Friend Const RSE_Err_CantAddFileToDeviceProject_1Arg As String = "RSE_Err_CantAddFileToDeviceProject_1Arg"
 '        Friend Const RSE_Err_TypeIsNotSupported_1Arg As String = "RSE_Err_TypeIsNotSupported_1Arg"
-'        Friend Const RSE_Err_CantSaveResouce_1Arg As String = "RSE_Err_CantSaveResouce_1Arg"
+'        Friend Const RSE_Err_CantSaveResourceDiscard_1Arg As String = "RSE_Err_CantSaveResourceDiscard_1Arg"
 '        Friend Const RSE_Err_Name As String = "RSE_Err_Name"
 '        Friend Const RSE_Err_NameList As String = "RSE_Err_NameList"
 '        Friend Const RSE_NothingValue As String = "RSE_NothingValue"
@@ -707,7 +707,7 @@ End Namespace
 '        End Property
 
 '        Public Shared Function GetString(ByVal name As String, ByVal ParamArray args As Object()) As String
-'            '// null CultureInfo: let ResouceManager determine the culture
+'            '// null CultureInfo: let ResourceManager determine the culture
 '            '// fxcop complains about not suppling a culture
 '            Return GetString(SR.Culture, name, args)
 '        End Function

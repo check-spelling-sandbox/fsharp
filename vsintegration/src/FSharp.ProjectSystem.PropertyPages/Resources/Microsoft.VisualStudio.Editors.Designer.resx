@@ -1223,7 +1223,7 @@ Do you really want to edit this file?</value>
     <value>The resource item uses the type '{0}', which is not supported in this project.</value>
     <comment>{0} - name of the type</comment>
   </data>
-  <data name="RSE_Err_CantSaveResouce_1Arg" xml:space="preserve">
+  <data name="RSE_Err_CantSaveResourceDiscard_1Arg" xml:space="preserve">
     <value>The resource item(s) {0} cannot be saved correctly.  The item(s) will be discarded.</value>
     <comment>{0} - name list of the resource</comment>
   </data>
