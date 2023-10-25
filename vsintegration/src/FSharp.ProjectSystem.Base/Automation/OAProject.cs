@@ -81,7 +81,7 @@ namespace Microsoft.VisualStudio.FSharp.ProjectSystem.Automation
         }
 
         /// <summary>
-        /// For use by F# tooling only. Specfies if the project is dirty.
+        /// For use by F# tooling only. Specifies if the project is dirty.
         /// </summary>
         public virtual bool IsDirty
         {
