@@ -68,7 +68,7 @@ function Exec-CommandCore([string]$command, [string]$commandArgs, [switch]$useCo
     $finished = $false
     try {
         # The OutputDataReceived event doesn't fire as events are sent by the 
-        # process in powershell.  Possibly due to subtlties of how Powershell
+        # process in powershell.  Possibly due to subtleties of how Powershell
         # manages the thread pool that I'm not aware of.  Using blocking
         # reading here as an alternative which is fine since this blocks 
         # on completion already.
