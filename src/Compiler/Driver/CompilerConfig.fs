@@ -213,7 +213,7 @@ type IRawFSharpAssemblyData =
     /// Indicates if the assembly has any F# signature data attribute
     abstract HasAnyFSharpSignatureDataAttribute: bool
 
-    /// Indicates if the assembly has an F# signature data attribute auitable for use with this version of F# tooling
+    /// Indicates if the assembly has an F# signature data attribute suitable for use with this version of F# tooling
     abstract HasMatchingFSharpSignatureDataAttribute: bool
 
 /// Cache of time stamps as we traverse a project description
