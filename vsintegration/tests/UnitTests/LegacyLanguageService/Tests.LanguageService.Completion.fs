@@ -6884,7 +6884,7 @@ let rec f l =
             marker = "(*MarkerParam*)")
 
     [<Test>]
-    member this.``Identifier.AsFunctionName.UsingfunKeyword``() =
+    member this.``Identifier.AsFunctionName.UsingFunKeyword``() =
         this.VerifyDotCompListIsEmptyAtStartOfMarker(
             fileContents = """fun f4(*MarkerFunctionDeclaration*)  x -> x+1""",
             marker = "(*MarkerFunctionDeclaration*)")
