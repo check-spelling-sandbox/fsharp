@@ -6864,7 +6864,7 @@ let rec f l =
         AssertCompListIsEmpty(completions)
 
     [<Test>]
-    member this.``Identifier.AsClassName.Uninitial``() =
+    member this.``Identifier.AsClassName.InInitial``() =
         this.VerifyDotCompListIsEmptyAtStartOfMarker(
             fileContents = """
                 type f1(*MarkerType*) = 
@@ -6872,13 +6872,13 @@ let rec f l =
             marker = "(*MarkerType*)")
 
     [<Test>]
-    member this.``Identifier.AsFunctionName.UnInitial``() =
+    member this.``Identifier.AsFunctionName.InInitial``() =
         this.VerifyDotCompListIsEmptyAtStartOfMarker(
             fileContents = """let f2(*MarkerFunctionIdentifier*) x = x+1 """,
             marker = "(*MarkerFunctionIdentifier*)")
 
     [<Test>]
-    member this.``Identifier.AsParameter.UnInitial``() =
+    member this.``Identifier.AsParameter.InInitial``() =
         this.VerifyDotCompListIsEmptyAtStartOfMarker(
             fileContents = """ let f3 x(*MarkerParam*) = x+1""",
             marker = "(*MarkerParam*)")
