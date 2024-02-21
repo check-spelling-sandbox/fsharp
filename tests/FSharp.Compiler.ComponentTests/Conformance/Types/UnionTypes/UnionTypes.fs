@@ -135,8 +135,8 @@ module UnionTypes =
         |> verifyCompile
         |> shouldFail
         |> withDiagnostics [
-            (Error 23, Line 9, Col 19, Line 9, Col 22, "The member 'IsC' can not be defined because the name 'IsC' clashes with the default augmentation of the union case 'C' in this type or module")
-            (Error 23, Line 13, Col 24, Line 13, Col 27, "The member 'IsC' can not be defined because the name 'IsC' clashes with the default augmentation of the union case 'C' in this type or module")
+            (Error 23, Line 9, Col 19, Line 9, Col 22, "The member 'IsC' cannot be defined because the name 'IsC' clashes with the default augmentation of the union case 'C' in this type or module")
+            (Error 23, Line 13, Col 24, Line 13, Col 27, "The member 'IsC' cannot be defined because the name 'IsC' clashes with the default augmentation of the union case 'C' in this type or module")
         ]
 
     //SOURCE=E_ScopeAndDataConstrAndPattern01.fsx SCFLAGS="--test:ErrorRanges"	                # E_ScopeAndDataConstrAndPattern01.fsx
@@ -181,10 +181,10 @@ module UnionTypes =
         |> verifyCompile
         |> shouldFail
         |> withDiagnostics [
-            (Error 23, Line 12, Col 17, Line 12, Col 22, "The member 'Item1' can not be defined because the name 'Item1' clashes with the generated property 'Item1' in this type or module")
-            (Error 23, Line 13, Col 17, Line 13, Col 22, "The member 'Item2' can not be defined because the name 'Item2' clashes with the generated property 'Item2' in this type or module")
-            (Error 23, Line 14, Col 17, Line 14, Col 19, "The member 'V3' can not be defined because the name 'V3' clashes with the generated property 'V3' in this type or module")
-            (Error 23, Line 19, Col 17, Line 19, Col 21, "The member 'Item' can not be defined because the name 'Item' clashes with the generated property 'Item' in this type or module")
+            (Error 23, Line 12, Col 17, Line 12, Col 22, "The member 'Item1' cannot be defined because the name 'Item1' clashes with the generated property 'Item1' in this type or module")
+            (Error 23, Line 13, Col 17, Line 13, Col 22, "The member 'Item2' cannot be defined because the name 'Item2' clashes with the generated property 'Item2' in this type or module")
+            (Error 23, Line 14, Col 17, Line 14, Col 19, "The member 'V3' cannot be defined because the name 'V3' clashes with the generated property 'V3' in this type or module")
+            (Error 23, Line 19, Col 17, Line 19, Col 21, "The member 'Item' cannot be defined because the name 'Item' clashes with the generated property 'Item' in this type or module")
         ]
 
     //SOURCE=E_InheritUnion.fs                                                                    # E_InheritUnion.fs
@@ -312,7 +312,7 @@ module UnionTypes =
         |> verifyCompile
         |> shouldFail
         |> withDiagnostics [
-            (Error 23, Line 19, Col 14, Line 19, Col 17, "The member 'Tag' can not be defined because the name 'Tag' clashes with the generated property 'Tag' in this type or module")
+            (Error 23, Line 19, Col 14, Line 19, Col 17, "The member 'Tag' cannot be defined because the name 'Tag' clashes with the generated property 'Tag' in this type or module")
         ]
 
     //SOURCE=E_UnionMemberNamedTags.fs SCFLAGS="--test:ErrorRanges"                               # E_UnionMemberNamedTags.fs
@@ -322,7 +322,7 @@ module UnionTypes =
         |> verifyCompile
         |> shouldFail
         |> withDiagnostics [
-            (Error 23, Line 19, Col 14, Line 19, Col 18, "The member 'Tags' can not be defined because the name 'Tags' clashes with the generated type 'Tags' in this type or module")
+            (Error 23, Line 19, Col 14, Line 19, Col 18, "The member 'Tags' cannot be defined because the name 'Tags' clashes with the generated type 'Tags' in this type or module")
         ]
 
     //SOURCE=E_UnionMemberNamedTagsNoDefault.fs SCFLAGS="--test:ErrorRanges"                      # E_UnionMemberNamedTagsNoDefault.fs
@@ -332,7 +332,7 @@ module UnionTypes =
         |> verifyCompile
         |> shouldFail
         |> withDiagnostics [
-            (Error 23, Line 19, Col 14, Line 19, Col 18, "The member 'Tags' can not be defined because the name 'Tags' clashes with the generated type 'Tags' in this type or module")
+            (Error 23, Line 19, Col 14, Line 19, Col 18, "The member 'Tags' cannot be defined because the name 'Tags' clashes with the generated type 'Tags' in this type or module")
         ]
 
     //SOURCE=E_UnionsNotNull01.fs                                                                 # E_UnionsNotNull01.fs
